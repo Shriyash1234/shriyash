@@ -38,6 +38,7 @@ h1{
     padding-left: 2vw;
     transform: rotate(-90deg);
     font-family: Bolde,sans-serif;
+    visibility: visible;
     /* transform: translateX(0vw); */
     
 }
@@ -138,6 +139,7 @@ body{
     margin-right: auto;
     margin-top: 2.2vw;
     margin-bottom: 0vw;
+    opacity: 1;
 }
 .short-line2{
     background-color: #f94343;
@@ -148,6 +150,7 @@ body{
     margin-right: auto;
     margin-top: 1vw;
     margin-bottom: 0vw;
+    opacity: 1;
 }
 .short-line3{
     background-color:#f94343;
@@ -157,6 +160,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 1vw;
+    opacity: 1;
 }
 
 /* sidebar css */
@@ -196,9 +200,56 @@ h2{
     top:20vh;
     width:20vw;
     z-index: -1;
+    border-radius: 3%;
 }
 
 /***** Top menu *****/
 .glass{
     backdrop-filter: blur(0.5em);
+}
+@media screen and (max-width:991px){
+    .personal_image{
+        top:25vh;
+        width:56vw;
+    }
+    .Shriyash{
+        margin-top: 90vh;
+        font-size: 12vw;
+    }
+    .Mandavekar{
+        font-size: 12vw;
+        padding-top: 0.1vh;
+        padding-left: 5vw;
+    }
+    .sidecircle.small{
+        border: 1px solid #f84342;
+        border-radius: 50%;
+        width: 13vw;
+        height: 13vw;
+        top: 3.5vh;
+        left:3.5vh;
+    }
+    .short-line1{
+        height: 2px;
+        margin-top: 4vw;
+        margin-bottom: 0vw;
+        opacity: 1;
+    }
+    .short-line2{
+        height: 2px;
+        margin-top: 2vw;
+        margin-bottom: 0vw;
+        opacity: 1;
+    }
+    .short-line3{
+        height: 2px;
+        margin-top: 2vw;
+        opacity: 1;
+    }
+    .sidename{
+        visibility: hidden;
+    }
+    .info{
+        padding-top: 10vh;
+    }
 }
