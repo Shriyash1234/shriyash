@@ -14,10 +14,10 @@ h1{
 }
 .Shriyash{
     font-family: 'Playfair Display', serif;
-    font-size: 8vw;
+    font-size: 9vw;
     color: #f94343;
-    margin-top: 10vh;
-    margin-right: 300px;
+    margin-top: 1vh;
+    margin-right: 350px;
     margin-bottom: 0px;
 }
 
@@ -33,7 +33,7 @@ h1{
 .sidename{
     position: fixed;
     color: #f94343;
-    font-size: 1em;
+    font-size: 1.4em;
     top:55vh;
     padding-left: 2vw;
     transform: rotate(-90deg);
@@ -50,15 +50,15 @@ h1{
 .cornername{
     position: absolute;
     color: #f94343;
-    font-size: 0.6em;
-    padding-top: 1em;
+    font-size: 1em;
+    padding-top: 1.3em;
     padding-right: 1.6em;
 }
 .cornerweb{
-    padding-top: 1.5em;
-    color: #f94343;
-    font-size: 1em;
-    padding-right: 0.8em;
+    padding-top: 2em;
+    color: #df5f5f;
+    font-size: 1.3em;
+    padding-right: 1.1em;
 }
 
 /* .sidecontainer{
@@ -345,5 +345,17 @@ h2{
     .circle.small {
         width: 110px;
         height: 110px;
+    }
+}
+@media screen and (max-width:430px){
+    .cornerweb{
+        padding-top: 3em;
+        font-size: 1.1em;
+        padding-right: 0.8em;
+    }
+    .cornername{
+        font-size: 0.8em;
+        padding-top: 4vh;
+        padding-right: 1.6em;
     }
 }
