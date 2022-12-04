@@ -24,7 +24,7 @@ window.onresize = function(event) {
   console.log(width);
   if(width >=991){  
     document.getElementsByClassName('personal_image')[0].style.left = 0.4* width + 'px';
-    document.getElementsByClassName("Shriyash")[0].style.marginTop = 0.1*vh+'px';
+    document.getElementsByClassName("Shriyash")[0].style.marginTop = 0.01*vh+'px';
     }
     else if(width>479){
       document.getElementsByClassName('personal_image')[0].style.left = 0.22* width + 'px';
