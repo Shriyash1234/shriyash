@@ -1,20 +1,39 @@
 window.onload = (event) => {
   let width = window.innerWidth;
-  if(width >991){
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+  console.log(width)
+  if(width >=991){
+    console.log('a')
   document.getElementsByClassName('personal_image')[0].style.left = 0.4* width + 'px';
+  document.getElementsByClassName("Shriyash")[0].style.marginTop = 0.1*vh+'px';
+  }
+  else if(width>479){
+    document.getElementsByClassName('personal_image')[0].style.left = 0.22* width + 'px';
+    document.getElementsByClassName("Shriyash")[0].style.marginTop = 0.58*vw+0.25*vh+'px';
   }
   else{
     document.getElementsByClassName('personal_image')[0].style.left = 0.22* width + 'px';
-    }
+    document.getElementsByClassName("Shriyash")[0].style.marginTop = 0.25*vh+0.62*vw+'px';
+  }  
 };
 window.onresize = function(event) {
   let width = window.innerWidth;
-  if(width >991){
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+  console.log(width);
+  if(width >=991){  
     document.getElementsByClassName('personal_image')[0].style.left = 0.4* width + 'px';
+    document.getElementsByClassName("Shriyash")[0].style.marginTop = 0.1*vh+'px';
+    }
+    else if(width>479){
+      document.getElementsByClassName('personal_image')[0].style.left = 0.22* width + 'px';
+      document.getElementsByClassName("Shriyash")[0].style.marginTop = 0.58*vw+0.25*vh+'px';
     }
     else{
       document.getElementsByClassName('personal_image')[0].style.left = 0.22* width + 'px';
-      }
+      document.getElementsByClassName("Shriyash")[0].style.marginTop = 0.25*vh+0.62*vw+'px';
+    }  
 };
 
 
@@ -24,7 +43,9 @@ function translate_on_scroll(){
     let scroll_top = window.scrollY;
     console.log('scroll top = ',scroll_top)
     // let shriyash_height = document.getElementsByClassName('Shriyash')[0].clientHeight;
-    if(width<991){
+    let shriyash_height = document.getElementsByClassName('personal_image')[0].clientHeight;
+    // console.log(shriyash_height);
+    if(width<991 && width>700){
       if(window.scrollY > 870 ){
         document.getElementsByClassName("info")[0].style.opacity= 0.015 * (window.scrollY-870);
       }
@@ -32,10 +53,16 @@ function translate_on_scroll(){
         document.getElementsByClassName("info")[0].style.opacity= 0;
       }
       let scroll_top = 0.75*window.scrollY;
+      // let height = window.innerHeight;
+      // console.log(height);
+      const vw = Math.min(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+      const vh = Math.min(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+      // console.log(vw);
+      // console.log(vh);
       document.getElementsByClassName("Shriyash")[0].style.transform = `translateX(${scroll_top}px)`;
       document.getElementsByClassName("Mandavekar")[0].style.transform = `translateX(-${scroll_top}px)`;
     }
-    else{
+    else if(width>991){
       if(window.scrollY > 200 ){
         document.getElementsByClassName("info")[0].style.opacity= 0.003 * (window.scrollY-200);
       }
@@ -46,7 +73,21 @@ function translate_on_scroll(){
       document.getElementsByClassName("Shriyash")[0].style.transform = `translateX(${scroll_top}px)`;
       document.getElementsByClassName("Mandavekar")[0].style.transform = `translateX(-${scroll_top}px)`;
       
-    }  
+    }
+    else{
+      if(window.scrollY > 680 ){
+        const vw = window.innerWidth;
+        document.getElementsByClassName("info")[0].style.opacity= (2.8/vw) * (window.scrollY-680);
+      }
+      else{
+        document.getElementsByClassName("info")[0].style.opacity= 0;
+      }
+      let scroll_top = 0.4*window.scrollY;
+      const vh = window.innerHeight;
+      document.getElementsByClassName("Shriyash")[0].style.transform = `translateX(${scroll_top}px)`;
+      document.getElementsByClassName("Mandavekar")[0].style.transform = `translateX(-${scroll_top}px)`;
+      
+    }    
  
     
     
@@ -57,7 +98,7 @@ translate_on_scroll();
 
 window.onscroll = translate_on_scroll;
 $(window).on('resize', function() {
-    if($(window).width() < 990) {
+    if($(window).width() < 991) {
       $('.circle1').removeClass('circle2');
       $('.Web_devloper').removeClass('Web_devloper2');
   
@@ -68,7 +109,7 @@ $(window).on('resize', function() {
     }
   })
   $(window).on('load', function() {
-    if($(window).width() < 990) {
+    if($(window).width() < 991) {
       $('.circle1').removeClass('circle2');
       $('.Web_devloper').removeClass('Web_devloper2');
   

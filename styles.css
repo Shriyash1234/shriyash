@@ -42,6 +42,24 @@ h1{
     /* transform: translateX(0vw); */
     
 }
+.corner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.cornername{
+    position: absolute;
+    color: #f94343;
+    font-size: 0.6em;
+    padding-top: 1em;
+    padding-right: 1.6em;
+}
+.cornerweb{
+    padding-top: 1.5em;
+    color: #f94343;
+    font-size: 1em;
+    padding-right: 0.8em;
+}
 
 /* .sidecontainer{
     position: absolute;
@@ -207,10 +225,12 @@ h2{
 .glass{
     backdrop-filter: blur(0.5em);
 }
-@media screen and (max-width:991px){
+
+@media screen and (max-width:991px) {
     .personal_image{
         top:25vh;
-        width:56vw;
+        width:60vw;
+        height:90vw;
     }
     .Shriyash{
         margin-top: 90vh;
@@ -250,6 +270,80 @@ h2{
         visibility: hidden;
     }
     .info{
-        padding-top: 10vh;
+        padding-top: 25vh;
+       
+    }
+    .Web_devloper{
+        font-size: 13vw;
+    }
+    .cornername{
+        font-size: 0.8em;
+        padding-top: 4vh;
+        padding-right: 1.6em;
+    }
+    .cornerweb{
+        padding-top: 2.2em;
+        font-size: 1.5em;
+        padding-right: 0.8em;
+    }
+}
+@media screen and (max-width:479px){
+    .sidecircle.small{
+        border: 1px solid #f84342;
+        border-radius: 50%;
+        width: 22vw;
+        height: 22vw;
+        top: 2.8vh;
+        left:2.8vh;
+    }
+    .short-line1{
+        height: 1px;
+        margin-top: 7vw;
+        margin-bottom: 0vw;
+        opacity: 1;
+    }
+    .short-line2{
+        height: 1px;
+        margin-top: 3vw;
+        margin-bottom: 0vw;
+        opacity: 1;
+    }
+    .short-line3{
+        height: 1px;
+        margin-top: 3vw;
+        opacity: 1;
+    }
+    .Shriyash{
+        margin-top:68vh;
+    }
+}
+@media screen and (max-width:720px){
+    .info{
+        padding-top: 40vh;
+        padding-bottom: 18vh;
+    }
+    .circle.small {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media screen and (max-width:600px){
+    .info{
+        padding-top: 40vh;
+        padding-bottom: 21vh;
+    }
+    .circle.small {
+        width: 120px;
+        height: 120px;
+    }
+}
+@media screen and (max-width:525px){
+    .info{
+        padding-top: 40vh;
+        padding-bottom: 30vh;
+    }
+    .circle.small {
+        width: 110px;
+        height: 110px;
     }
 }
