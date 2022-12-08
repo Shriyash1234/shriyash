@@ -2,6 +2,8 @@ window.onload = (event) => {
   let width = window.innerWidth;
   const vw = window.innerWidth;
   const vh = window.innerHeight;
+  // const element = document.getElementById("bg2");
+  // element.remove();
   console.log(width)
   if(width >=991){
     console.log('a')
@@ -25,6 +27,8 @@ window.onresize = function(event) {
   if(width >=991){  
     document.getElementsByClassName('personal_image')[0].style.left = 0.4* width + 'px';
     document.getElementsByClassName("Shriyash")[0].style.marginTop = 0.01*vh+'px';
+    // const element = document.getElementById("bg");
+    // element.remove();
     }
     else if(width>479){
       document.getElementsByClassName('personal_image')[0].style.left = 0.22* width + 'px';
@@ -87,13 +91,22 @@ function translate_on_scroll(){
       document.getElementsByClassName("Shriyash")[0].style.transform = `translateX(${scroll_top}px)`;
       document.getElementsByClassName("Mandavekar")[0].style.transform = `translateX(-${scroll_top}px)`;
       
-    }    
- 
-    
-    
-    
+    }           
 }
 
+function redirect(){
+  $.ajax({
+    'type': 'get',
+     'url': 'sidebar.html',
+     'success': function(response) {
+      $("html").html(response);
+  }
+  });
+  // const element = document.getElementById("bg");
+  // element.remove();
+  // const element2 = document.getElementById("bg");
+  // element2.appendChild(element2);
+}
 translate_on_scroll();
 
 window.onscroll = translate_on_scroll;
