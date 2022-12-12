@@ -366,6 +366,9 @@ h4{
     left:10.6vw;
     align-items: center;
 }
+a{
+    text-decoration: none !important;
+}
 @media screen and (max-width:991px) {
     .personal_image{
         top:25vh;
