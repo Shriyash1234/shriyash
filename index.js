@@ -102,6 +102,8 @@ function redirect(){
       $("html").html(response);
   }
   });
+
+
   // const element = document.getElementById("bg");
   // element.remove();
   // const element2 = document.getElementById("bg");
@@ -139,3 +141,6 @@ $(window).on('resize', function() {
     // document.querySelector('p').style.transform='translateY(${scroll_top*2}px) rotate(-90deg)';
     // elm.style.transform = `translateX(${scrollDelta}px) rotate(${scrollDelta}deg)`;
     // document.getElementsByClassName("sidename")[0].style.transform = `translateX(${scroll_top}px) rotate(-90deg)`;
+
+
+//resume

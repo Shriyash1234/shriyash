@@ -6,7 +6,7 @@
                 <meta charset="utf-8">
                 
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="StyleSheet" href="resume.css" >
+                <link rel="StyleSheet" href="resume2.css" >
                 <title>
                     Personal website 
                  </title>
@@ -43,39 +43,50 @@
                 <div class="sidecircle4 glass2"></div> 
                 <div class="container1">
                     <div class="box1">
-                        <p>Education</p>
+                        <p class="education">Education</p>
                         <div class="Btech">
-                            <h3>B.Tech</h3>
-                            <h4>Indian Institute of Technology, Gandhinagar</h4>
-                            <div class="timespan">October-2020 to March-2024(expected)</div>
-                            <div class="CPI">Current CPI:7.56</div>
+                            <div class="Institute">
+                                <h3 id="btechno">B.Tech</h3>
+                                <h4>Indian Institute of Technology, Gandhinagar</h4>
+                                <p class="timespan">October-2020 to March-2024(expected)</p>
+                                <p class="CPI">Current CPI:7.56</p>
+                            </div>
+                            <div class="Institute-photo1">
+                                <img class="IITGN" src="Photos/IITGN.jpg" alt="">
+                            </div>
                         </div>
                         
                         <div class="Btech">
-                            <h3>Class XII</h3>
-                            <h4>Sent Paul College, Satara</h4>
-                            <div class="timespan">June-2019 to April-2020</div>
-                            <div class="CPI">Percentage:83.54%</div>
+                            <div class="Institute">
+                                <h3 id="btechno2">Class XII</h3>
+                                <h4>Sent Paul College, Satara</h4>
+                                <p class="timespan">June-2019 to April-2020</p>
+                                <p class="CPI">Percentage:83.54%</p>
+                            </div>
+                            <div class="Institute-photo2">
+                                <img class="IITGN" src="Photos/stpaul.jpg" alt="">
+                            </div>    
                         </div>
-
+                        
                         <div class="Btech">
-                            <h3>Class X</h3>
-                            <h4>New English School, Satara</h4>
-                            <div class="timespan">June-2017 April-2018</div>
-                            <div class="CPI">Percentage:97%</div>
+                            <div class="Institute">
+                                <h3 id="btechno3">Class X</h3>
+                                <h4>New English School, Satara</h4>
+                                <p class="timespan">June-2017 April-2018</p>
+                                <p class="CPI">Percentage:97%</p>
+                            </div>    
+                            <div class="Institute-photo3">
+                                    <img class="IITGN" src="Photos/NESS.jpg" alt="">
+                            </div>
                         </div>
+    
                         
                     </div>
 
-                    <div class="box2">
-                        <img class="IITGN" src="Photos/IITGN.jpg" alt="">
-                        <img class="IITGN" src="Photos/stpaul.jpg" alt="">
-                        <img class="IITGN" src="Photos/NESS.jpg" alt="">
-                        
-                    </div>
+                    
                 </div>
-                <div class="container1">
-                    <div class="box3">
+                <div class="row">
+                    <div class="col-12 col-lg-6 col-sm-12">
                         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                               <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -123,17 +134,14 @@
                               <span class="visually-hidden">Next</span>
                             </button>
                           </div>
-                        <img class="IITGN" src="Photos/stpaul.jpg" alt="">
-                        <img class="IITGN" src="Photos/NESS.jpg" alt="">
-                        
                     </div>
-                    <div class="box4">
-                        <p>Projects</p>
-                        <div class="project">
-                            <h3>Developed a website for the college</h3>
+                    <div class="col-12 col-lg-6 col-sm-12 " style="z-index: 100;">
+                        <div class="project" >
+                            <h3 style="color: #f84342;">Developed a website for the college</h3>
                             <div class="timespan">May-2022 to June-2022</div>
                             
-                            <div class="Desc"><ul><li>I developed a responsive website for the students of graduating batch of our college 
+                            <div class="Desc" style="color: #f84342;">
+                                <ul><li>I developed a responsive website for the students of graduating batch of our college 
                                 where they can see messages from their classmates.</li>
                                 <li>I used node.js and its libraries(.ejs, express. js, mongoose, etc.) 
                                     for the backend, HTML, CSS, bootstrap, javascript, jquery for frontend and 
@@ -141,27 +149,11 @@
                                     <a href="https://students.iitgn.ac.in/yearbook/2022">
                                         Link to the website
                                     </a>
-                                
-                            </ul>    
+                                </ul>    
                                 </div>
-                        </div>
-                        
-                        <div class="project">
-                            <h3>Class XII</h3>
-                            <div class="timespan">June-2019 to April-2020</div>
-                            <div class="CPI">Percentage:83.54%</div>
-                        </div>
-
-                        <div class="project">
-                            <h3>Class X</h3>
-                            <div class="timespan">June-2017 April-2018</div>
-                            <div class="CPI">Percentage:97%</div>
-                        </div>
-                        
+                        </div>    
+                   
                     </div>
-
-                
-                </div>
             </div>
                 
                 <script>
@@ -330,7 +322,7 @@
                   </script>
                       
             </body>
-            <!-- <script src="index.js" charset="utf-8"></script> -->
+            <script src="resume_index.js" charset="utf-8"></script>
         </html>
         </html>
         <script>
@@ -498,4 +490,6 @@
           </script>
               
     </body>
+    <script src="resume_index.js" charset="utf-8"></script>
+  </html>  
     

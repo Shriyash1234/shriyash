@@ -28,13 +28,13 @@
     </title>
     <body>
       <div id="bg">
-        <a href="/sidebar.html">
-            <div class="sidecircle small glass">
+        <!-- <a href="/sidebar.html"> -->
+            <div onclick = "toggles()" class="sidecircle small glass">
             
                 <hr class="short-line1" width="50%">
                 <hr class="short-line2" width="50%">
                 <hr class="short-line3" width="50%">
-        </a>    
+        <!-- </a>     -->
         </div>
         <div class="corner">
             <h5 class="cornername">WEB DEVELOPER</h5>
@@ -58,8 +58,31 @@
             </div>
           </div>
         </div>
+            <div class="menubar">
+                <div class="menu1">
+                    <h2 class="big-size home">HOME</h2>
+                    <h2 class="big-size about">ABOUT</h2>
+                </div>
+                <div class="menu2">
+                        <h2 class="big-size resume">RESUME</h2>
+                    <h2 class="big-size contacts">CONTACTS</h2>
+                </div>
+            </div> 
+            <div class="vl"></div>           <!-- vertical line -->                      
       </div>
-        
+            <script>
+                
+                function toggles(){
+                    if(document.getElementsByClassName('menubar')[0].style.opacity == '1'){
+                        document.getElementsByClassName('menubar')[0].style.opacity = '0';
+                        document.getElementsByClassName('vl')[0].style.opacity = '0';
+                    }
+                    else{
+                        document.getElementsByClassName('menubar')[0].style.opacity = '1';
+                        document.getElementsByClassName('vl')[0].style.opacity = '1';
+                    }    
+                }
+            </script>
         
         <script>
           /*! Grained.js

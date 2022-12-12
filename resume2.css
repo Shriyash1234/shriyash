@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 h1{
     font-size: 10vw;
@@ -15,95 +16,11 @@ h1{
     flex-direction: column;
     
 }
-.Shriyash{
-    font-family: 'Playfair Display', serif;
-    font-size: 9vw;
-    color: #f94343;
-    margin-top: 1vh;
-    margin-right: 350px;
-    margin-bottom: 0px;
-}
 
-.Mandavekar{
-    font-family: 'Playfair Display', serif;
-    font-size: 8vw;
-    padding-top: 30vh;
-    color: #f94343;
-    padding-left: 15vw;
-   
-}
-
-.sidename{
-    position: fixed;
-    color: #f94343;
-    font-size: 1.4em;
-    top:55vh;
-    padding-left: 2vw;
-    transform: rotate(-90deg);
-    font-family: Bolde,sans-serif;
-    visibility: visible;
-    /* transform: translateX(0vw); */
-    
-}
-.corner{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.cornername{
-    position: absolute;
-    color: #f94343;
-    font-size: 1em;
-    padding-top: 1.3em;
-    padding-right: 1.6em;
-}
-.cornerweb{
-    padding-top: 2em;
-    color: #df5f5f;
-    font-size: 1.3em;
-    padding-right: 1.1em;
-}
-
-/* .sidecontainer{
-    position: absolute;
-    right:0 ;
-} */
-h1{
-    margin-top: 0px;
-}
 body{
     background-color: #2b2626 !important;
 }
 
-.info{
-    padding-top: 35vh;
-    padding-bottom: 50px;
-    /* visibility: hidden; */
-    opacity: 0.1;
-}
-.Web_devloper{
-    font-size: 8vw;
-    font-weight: bolder;
-}
-.Web_devloper2{
-    text-align: left;
-}
-/* .IITGN{
-    font-family: 'Playfair Display', serif; 
-} */
-.circle2{
-    padding-top: 12.5vw;
-    padding-left: 10vw !important;
-}
-
-.circle.small {
-	border: 1px solid #f84342;
-	border-radius: 50%;
-	width: 220px;
-	height: 220px;
-	z-index: 86;
-    margin:auto;
-}
 .sidecircle.small {
 
     position: fixed;
@@ -145,6 +62,7 @@ body{
     letter-spacing: -0.02em;
     word-spacing: -0.02em;
     line-height: 1;
+    vertical-align: middle;
     margin-top: 32px;
 }
 .developer{
@@ -182,88 +100,24 @@ body{
     margin-top: 1vw;
     opacity: 1;
 }
-.personal_image{
-    position:absolute;
-    /* left: 35vw; */
-    top:20vh;
-    width:20vw;
-    z-index: -1;
-    border-radius: 3%;
-}
+
 
 /***** Top menu *****/
 .glass{
     backdrop-filter: blur(0.5em);
 }
 
-/* sidebar css */
-.menubar{
-    opacity: 0;
-    transform: translateY(0%);
-    background-color: rgba(0, 0, 0, 0.95);
-    z-index: 85;
-    position: fixed;
-    top:0;
-    display: flex;
-    /* flex-direction: column; */
-    height: 100%;
-    width:100%;
-    transition: all 1s;
-    /* justify-content: space-around; */
-}
-.menu1{
-    width:50vw;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    /* align-items: flex-end; */
-}
-.menu2{
-    
-    display: flex;
-    /* align-items: center; */
-    flex-direction: column;
-}
-.vl {
-    z-index: 100;
-    border-left: 2px solid #f94343;
-    height: 500px;
-    position: fixed;
-    left: 50%;
-    margin-left: -3px;
-    top: 15vh;
-    opacity: 0;
-    /* bottom: 20vh; */
-    
-  }
-.big-size{
-    font-size: 7vw;
-    font-weight: bolder;
-}
+
+
+
+
 h2{
     font-size: 10vw;
     color: #f94343;
     font-family: 'Bolde', sans-serif;
 }
-.home{
-    padding-top: 20vh;
-    padding-left: 20vw;
-    
-}
-.about{
-    padding-top: 20vh;
-    padding-left: 17vw;
-    
-}
-.resume{
-    padding-top: 20vh;
-    padding-left: 5.5vw;
-}
-
-.contacts{
-    padding-top: 20vh;
-    padding-left: 5.5vw;
-}
+ 
+  
 #bg2{
     /* position: static !important;
     top: 0; right: 0; bottom: 0; left: 0;
@@ -284,13 +138,20 @@ h2{
     display: flex;
     flex-direction: row;
 }
-.box1{
-    padding-left: 16vw;
-    width: 50vw;
-    color: #f94343;  
-}
+
 .Btech{
+    display: flex;
+    flex-direction: row;
     height: 50vh;
+    /* margin-bottom: 10vh; */
+}
+.project{
+    width:45vw;
+    padding-left: 8vw;
+    height: 50vh;
+    margin-bottom: 10vh;
+    overflow-y:scroll;
+    z-index: 1000;
 }
 p{
     font-size: 6vh;
@@ -298,19 +159,52 @@ p{
 h4{
     font-weight: 900;
 }
+.box1{
+    padding-left: 16vw;
+    width: 100vw;
+    color: #f94343;  
+}
+.Institute-photo1{
+   padding-left: 6vw;
+}
+.Institute-photo2{
+    padding-left: 20vw;
+ }
+ .Institute-photo3{
+    padding-left: 19vw;
+ }
 .box2{
     padding-top: 10vh;
     /* padding-left: 16vw; */
     width:50vw;
     color: #f94343;
 }
+.box3{
+    padding-top: 12vh;
+    padding-left: 7vw;
+    width: 50vw;
+    color: #f94343;  
+}
+.box4{
+   
+    /* padding-left: 16vw; */
+    width:40vw;
+    color: #f94343;
+    z-index: 1000;
+}
+.Desc{
+    padding-top: 3vh;
+    font-size: 3vh;
+}
 .timespan{
     padding-top: 3vh;
     font-size: 3vh;
+    color: #df5f5f;
 }
 .CPI{
     padding-top: 3vh;
     font-size: 3vh;
+    color: #df5f5f;
 }
 .IITGN{
     width:40vw;
@@ -336,9 +230,9 @@ h4{
 	border-radius: 50%;
 	width: 2.5vw;
 	height: 2.5vw;
-	z-index: 86;
+	z-index: 80;
     margin:auto;
-    top: 34vh;
+    /* top: 34vh; */
     left:10.6vw;
     align-items: center;
 }
@@ -348,7 +242,7 @@ h4{
 	border-radius: 50%;
 	width: 2.5vw;
 	height: 2.5vw;
-	z-index: 86;
+	z-index: 80;
     margin:auto;
     top: 84.5vh;
     left:10.6vw;
@@ -360,27 +254,32 @@ h4{
 	border-radius: 50%;
 	width: 2.5vw;
 	height: 2.5vw;
-	z-index: 86;
+	z-index: 80;
     margin:auto;
     top: 134vh;
     left:10.6vw;
     align-items: center;
 }
+#myCarousel{
+    margin-left: 5vw;
+    width:40vw;
+    height:50vh;
+    margin-bottom: 10vh;
+}
+.carousel-photo{
+    width:40vw;
+    height:50vh;
+}
+a{
+    text-decoration: none !important;
+    color: #f84342;
+}
+.box5{
+    width:100vw;
+}
+
 @media screen and (max-width:991px) {
-    .personal_image{
-        top:25vh;
-        width:60vw;
-        height:90vw;
-    }
-    .Shriyash{
-        margin-top: 90vh;
-        font-size: 12vw;
-    }
-    .Mandavekar{
-        font-size: 12vw;
-        padding-top: 0.1vh;
-        padding-left: 5vw;
-    }
+
     .sidecircle.small{
         border: 1px solid #f84342;
         border-radius: 50%;
@@ -406,68 +305,50 @@ h4{
         margin-top: 2vw;
         opacity: 1;
     }
-    .sidename{
-        visibility: hidden;
+    .box1{
+        padding-left: 0vw;
     }
-    .info{
-        padding-top: 25vh;
-       
-    }
-    .Web_devloper{
-        font-size: 13vw;
-    }
-    .cornername{
-        font-size: 0.8em;
-        padding-top: 4vh;
-        padding-right: 1.6em;
-    }
-    .cornerweb{
-        padding-top: 2.2em;
-        font-size: 1.5em;
-        padding-right: 0.8em;
-    }
-    .vl{
-        visibility: hidden;
-    }
-    .menubar{
+    .Btech{
+        padding-left: 10vw;
+        display: flex;
         flex-direction: column;
+    }
+    .container-1{
         align-items: center;
     }
-    .menu1{
-        width: 100%;
-        align-items: center;
-    }
-    .menu2{
-        width: 100%;
-        align-items: center;
-    }
-    .home{
-        position: absolute;
-        padding-top: 20vh;
-        padding-left: 0vw;
+    .Btech{
         
+        padding-bottom: 80vw;
     }
-    .about{
+    .Institute-photo1{
+        padding-left: 0vw;
+    }
+    .Institute-photo2{
+        padding-left: 0vw;
+    }
+    .Institute-photo3{
+        padding-left: 0vw;
+    }
+    .IITGN{
+        width: 80vw;
+        height: 55vw;
+    }
+    .vl2{
 
-        position: absolute;
-        margin: auto;
-        padding-top: 35vh;
-        padding-left: 0vw;
-        
+    left: 5vw;
+    /* top: 27vh; */
     }
-    .resume{
-        position: absolute;
-        margin: auto;
-        padding-top: 50vh;
-        padding-left: 0vw;
+    .sidecircle2,.sidecircle3,.sidecircle4{
+        width: 4vw;
+        height: 4vw;
+        left: 2.7vw;
+    }
+    .education{
+        font-size: 5vw;
+       text-align: center;
     }
     
-    .contacts{
-        position: absolute;
-        margin: auto;
-        padding-top: 65vh;
-        padding-left: 0vw;
-    }
+   
 }
 @media screen and (max-width:479px){
     .sidecircle.small{
@@ -495,50 +376,82 @@ h4{
         margin-top: 3vw;
         opacity: 1;
     }
-    .Shriyash{
-        margin-top:68vh;
+    .timespan{
+        padding-top: 0vh;
+
     }
-   
+    
 }
 @media screen and (max-width:720px){
-    .info{
-        padding-top: 40vh;
-        padding-bottom: 18vh;
-    }
+   
     .circle.small {
         width: 150px;
         height: 150px;
     }
+    .timespan{
+        padding-top: 2vh;
+    }
+    .CPI{
+        padding-top: 0vh;
+    }
+    .Resume_center{
+        font-size: 8vw;
+        padding-top: 1.8vh;
+    }
+    .education{
+        font-size: 6vw;
+    }
+    .Btech{
+        padding-bottom: 90vw;
+    }
 }
 @media screen and (max-width:600px){
-    .info{
-        padding-top: 40vh;
-        padding-bottom: 21vh;
-    }
+   
     .circle.small {
         width: 120px;
         height: 120px;
     }
+    .sidecircle2,.sidecircle3,.sidecircle4{
+        width: 5vw;
+        height: 5vw;
+        left: 2vw;
+    }
 }
 @media screen and (max-width:525px){
-    .info{
-        padding-top: 40vh;
-        padding-bottom: 30vh;
-    }
+    
     .circle.small {
         width: 110px;
         height: 110px;
     }
 }
 @media screen and (max-width:430px){
-    .cornerweb{
-        padding-top: 3em;
-        font-size: 1.1em;
-        padding-right: 0.8em;
+    .sidecircle2{
+        width: 6vw;
+        height: 6vw;
+        left: 1.6vw;
     }
-    .cornername{
-        font-size: 0.8em;
-        padding-top: 4vh;
-        padding-right: 1.6em;
+    .Btech{
+        padding-bottom: 105vw;
     }
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #df5f5f #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #df5f5f;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
