@@ -446,8 +446,9 @@ a{
     }
     .home{
         position: absolute;
-        padding-top: 20vh;
-        padding-left: 0vw;
+        padding-left: 0;
+        margin: auto;
+        left:40vw;
         
     }
     .about{
@@ -463,6 +464,7 @@ a{
         margin: auto;
         padding-top: 50vh;
         padding-left: 0vw;
+        left: 35vw;
     }
     
     .contacts{
