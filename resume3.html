@@ -1,495 +1,697 @@
 <!DOCTYPE html>
-    
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
         
-            <head>
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta charset="utf-8">
-                
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="StyleSheet" href="resume2.css" >
-                <title>
-                    Personal website 
-                 </title>
-        
-                <!-- fonts -->
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Montserrat:ital,wght@0,400;1,300&family=Playfair+Display&family=Tiro+Kannada:ital@1&display=swap" rel="stylesheet">
-                <!-- Bootstrap -->
-                <!-- CSS only -->
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-                <!-- JavaScript Bundle with Popper -->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-                <!-- jquery -->
-                <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-                <!-- fonts -->
-                <script src="https://kit.fontawesome.com/dac226ae39.js" crossorigin="anonymous"></script>
-            </head>
-            <body>
-              <div id="bg2">
-                <a href="/index.html">
-                    <div class="sidecircle small glass">
-            
-                        <hr class="short-line1" width="50%">
-                        <hr class="short-line2" width="50%">
-                        <hr class="short-line3" width="50%">
-                        
-                    </div>  
-                </a>
-                <div class="Resume_center">Resume</div>
-                <div class="vl2"></div>
-                <div class="sidecircle2 glass2"></div> 
-                <div class="sidecircle3 glass2"></div> 
-                <div class="sidecircle4 glass2"></div> 
-                <div class="container1">
-                    <div class="box1">
-                        <p class="education">Education</p>
-                        <div class="Btech">
-                            <div class="Institute">
-                                <h3 id="btechno">B.Tech</h3>
-                                <h4>Indian Institute of Technology, Gandhinagar</h4>
-                                <p class="timespan">October-2020 to March-2024(expected)</p>
-                                <p class="CPI">Current CPI:7.56</p>
-                            </div>
-                            <div class="Institute-photo1">
-                                <img class="IITGN" src="Photos/IITGN.jpg" alt="">
-                            </div>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="StyleSheet" href="resume2.css" >
+        <title>
+            Personal website 
+            </title>
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Montserrat:ital,wght@0,400;1,300&family=Playfair+Display&family=Tiro+Kannada:ital@1&display=swap" rel="stylesheet">
+        <!-- Bootstrap -->
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <!-- fonts -->
+        <script src="https://kit.fontawesome.com/dac226ae39.js" crossorigin="anonymous"></script>
+    </head>
+        <body>
+            <div id="bg2">
+                <section id="menu">
+                        <div  onclick = "toggles()" class="sidecircle small glass">
+                            <hr class="short-line1" width="50%">
+                            <hr class="short-line2" width="50%">
+                            <hr class="short-line3" width="50%">
+                        </div>  
+                    <div class="Resume_center">Resume</div>
+                    <div class="vl2"></div>
+                    <div class="sidecircle2 glass2"></div> 
+                    <div class="sidecircle3 glass2"></div> 
+                    <div class="sidecircle4 glass2"></div>
+                </section>
+                <section id =menu-items>
+                    <div class="menubar">
+                        <div class="menu1">
+                            <a href="index.html"><h2 class="big-size home">HOME</h2></a>
+                            <h2 class="big-size about">ABOUT</h2>
                         </div>
-                        
-                        <div class="Btech">
-                            <div class="Institute">
-                                <h3 id="btechno2">Class XII</h3>
-                                <h4>Sent Paul College, Satara</h4>
-                                <p class="timespan">June-2019 to April-2020</p>
-                                <p class="CPI">Percentage:83.54%</p>
+                        <div class="menu2">
+                            <a href="resume3.html"><h2 class="big-size resume">RESUME</h2></a>
+                            <h2 class="big-size contacts">CONTACTS</h2>
+                        </div>
+                    </div> 
+                    <div class="vl"></div>           <!-- vertical line -->
+                </section>
+                <section id="education">
+                    <div class="container1">
+                        <div class="box1">
+                            <p class="education">Education</p>
+                            <div class="Btech">
+                                <div class="Institute">
+                                    <h3 id="btechno">B.Tech</h3>
+                                    <h4>Indian Institute of Technology, Gandhinagar</h4>
+                                    <p class="timespan">October-2020 to March-2024(expected)</p>
+                                    <p class="CPI">Current CPI:7.56</p>
+                                </div>
+                                <div class="Institute-photo1">
+                                    <img class="IITGN" src="Photos/IITGN.jpg" alt="">
+                                </div>
                             </div>
-                            <div class="Institute-photo2">
-                                <img class="IITGN" src="Photos/stpaul.jpg" alt="">
+                            
+                            <div class="Btech">
+                                <div class="Institute">
+                                    <h3 id="btechno2">Class XII</h3>
+                                    <h4>Sent Paul College, Satara</h4>
+                                    <p class="timespan">June-2019 to April-2020</p>
+                                    <p class="CPI">Percentage:83.54%</p>
+                                </div>
+                                <div class="Institute-photo2">
+                                    <img class="IITGN" src="Photos/stpaul.jpg" alt="">
+                                </div>    
+                            </div>
+                            
+                            <div class="Btech">
+                                <div class="Institute">
+                                    <h3 id="btechno3">Class X</h3>
+                                    <h4>New English School, Satara</h4>
+                                    <p class="timespan">June-2017 April-2018</p>
+                                    <p class="CPI">Percentage:97%</p>
+                                </div>    
+                                <div class="Institute-photo3">
+                                        <img class="IITGN" src="Photos/NESS.jpg" alt="">
+                                </div>
+                            </div>   
+                        </div>  
+                    </div>
+                </section>     
+                <section id="yearbook">
+                    <h1 class="websites">Websites designed by me</h1>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-sm-12">
+                            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <img class="carousel-photo" src="Photos/Yearbook/front_page.jpg" alt="">
+                                    <div class="container">
+                                        <div class="carousel-caption text-start">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="carousel-photo" src="/Photos/Yearbook/login_page.jpg" alt="">
+                            
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="carousel-photo" src="/Photos/Yearbook/students_page.jpg" alt="">
+                                    <div class="container">
+                                        <div class="carousel-caption text-end">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="carousel-photo" src="/Photos/Yearbook/student.jpg" alt="">
+                                    <div class="container">
+                                        <div class="carousel-caption text-end">
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-sm-12 visible" style="z-index: 92;">
+                            <div class="project" >
+                                <h3 style="color: #f84342;">Developed a website for the last year students</h3>
+                                <div class="timespan">May-2022 to June-2022</div>
+                                
+                                <div class="Desc" style="color: #f84342;">
+                                    <ul><li>I developed a responsive website for the students of graduating batch of our college 
+                                    where they can see messages from their classmates.</li>
+                                    <li>I used node.js and its libraries(.ejs, express. js, mongoose, etc.) 
+                                        for the backend, HTML, CSS, bootstrap, javascript, jquery for frontend and 
+                                        MongoDB as a database for storing the information and the hosted the website using Cpanel.</li>
+                                        <a href="https://students.iitgn.ac.in/yearbook/2022">
+                                            Link to the website
+                                        </a>
+                                    </ul>    
+                                    </div>
                             </div>    
-                        </div>
                         
-                        <div class="Btech">
-                            <div class="Institute">
-                                <h3 id="btechno3">Class X</h3>
-                                <h4>New English School, Satara</h4>
-                                <p class="timespan">June-2017 April-2018</p>
-                                <p class="CPI">Percentage:97%</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="Inter-IIT">  
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-sm-12">
+                            <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <img class="carousel-photo" src="Photos/Inter-IIT/Front_page.jpg" alt="">
+                                    <div class="container">
+                                        <div class="carousel-caption text-start">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="carousel-photo" src="/Photos/Inter-IIT/Team_photos.jpg" alt="">
+                            
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="carousel-photo" src="/Photos/Inter-IIT/Menu.jpg" alt="">
+                                    <div class="container">
+                                        <div class="carousel-caption text-end">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="carousel-photo" src="/Photos/Inter-IIT/Our_team.jpg" alt="">
+                                    <div class="container">
+                                        <div class="carousel-caption text-end">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="carousel-photo" src="/Photos/Inter-IIT/video.jpg" alt="">
+                                    <div class="container">
+                                        <div class="carousel-caption text-end">
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-sm-12 visible" style="z-index: 92;">
+                            <div class="project" >
+                                <h3 style="color: #f84342;">Developed a website to display images of INTER-IIT contingent</h3>
+                                <div class="timespan">December-2022</div>
+                                
+                                <div class="Desc" style="color: #f84342;">
+                                    <ul>
+                                        <li>I developed a responsive website for the students to see the images of March-past which held in IIT Gandhinagar.
+                                        </li>
+                                        <li>I used node.js and its libraries(.ejs, express) 
+                                            for the backend, HTML, CSS, bootstrap, javascript, jquery for frontend and 
+                                            hosted the website using Cpanel.
+                                        </li>
+                                        <a href="https://students.iitgn.ac.in/Inter_IIT_2022/sports_meet">
+                                            Link to the website
+                                        </a>
+                                    </ul>    
+                                </div>
                             </div>    
-                            <div class="Institute-photo3">
-                                    <img class="IITGN" src="Photos/NESS.jpg" alt="">
-                            </div>
-                        </div>
-    
                         
+                        </div>
+                    </div>
+                </section>
+                <section id="skills">
+                    <h1 class="skills">Skills</h1>
+                    <div class="container2">
+                        <div class="row1" >
+                            <h1 class="skill-items">HTML</h1>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle2"></p>
+                            <h3 class="percentage">90%</h3>
+                        </div>
+                        <div class="row1" >
+                            <h1 class="skill-items">CSS</h1>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle2"></p>
+                            <p class="circle2"></p>
+                            <h3 class="percentage">80%</h3>
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="row1" >
+                            <h1 class="skill-items">JS/jQuery</h1>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle2"></p>
+                            <p class="circle2"></p>
+                            <p class="circle2"></p>
+                            <h3 class="percentage">70%</h3>
+                        </div>
+                        <div class="row1" >
+                            <h1 class="skill-items">NodeJs</h1>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle2"></p>
+                            <p class="circle2"></p>
+                            <p class="circle2"></p>
+                            <h3 class="percentage">70%</h3>
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="row1" >
+                            <h1 class="skill-items">Reactjs</h1>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle2"></p>
+                            <p class="circle2"></p>
+                            <p class="circle2"></p>
+                            <h3 class="percentage">70%</h3>
+                        </div>
+                        <div class="row1" >
+                            <h1 class="skill-items">Python</h1>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle2"></p>
+                            <p class="circle2"></p>
+                            <h3 class="percentage">80%</h3>
+                        </div>
                     </div>
 
-                    
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-6 col-sm-12">
-                        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img class="carousel-photo" src="Photos/Yearbook/front_page.jpg" alt="">
-                                <div class="container">
-                                  <div class="carousel-caption text-start">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img class="carousel-photo" src="/Photos/Yearbook/login_page.jpg" alt="">
-                        
-                                <div class="container">
-                                  <div class="carousel-caption">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img class="carousel-photo" src="/Photos/Yearbook/students_page.jpg" alt="">
-                                <div class="container">
-                                  <div class="carousel-caption text-end">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img class="carousel-photo" src="/Photos/Yearbook/student.jpg" alt="">
-                                <div class="container">
-                                  <div class="carousel-caption text-end">
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
-                    </div>
-                    <div class="col-12 col-lg-6 col-sm-12 " style="z-index: 100;">
-                        <div class="project" >
-                            <h3 style="color: #f84342;">Developed a website for the college</h3>
-                            <div class="timespan">May-2022 to June-2022</div>
-                            
-                            <div class="Desc" style="color: #f84342;">
-                                <ul><li>I developed a responsive website for the students of graduating batch of our college 
-                                where they can see messages from their classmates.</li>
-                                <li>I used node.js and its libraries(.ejs, express. js, mongoose, etc.) 
-                                    for the backend, HTML, CSS, bootstrap, javascript, jquery for frontend and 
-                                    MongoDB as a database for storing the information and the hosted the website using Cpanel.</li>
-                                    <a href="https://students.iitgn.ac.in/yearbook/2022">
-                                        Link to the website
-                                    </a>
-                                </ul>    
-                                </div>
-                        </div>    
-                   
-                    </div>
-            </div>
-                
+                </section>
                 <script>
-                  /*! Grained.js
-                  * Author : Sarath Saleem  - https://github.com/sarathsaleem
-                  * MIT license: http://opensource.org/licenses/MIT
-                  * GitHub : https://github.com/sarathsaleem/grained
-                  * v0.0.1
-                  */
-                  (function (window, doc) {
-                  
-                      "use strict";
-                  
-                      function grained(ele, opt) {
-                  
-                          var element = null,
-                              elementId = null,
-                              selectorElement = null;
-                  
-                          if (typeof ele === 'string') {
-                              element = doc.getElementById(ele.split('#')[1]);
-                          }
-                  
-                          if (!element) {
-                              console.error('Grained: cannot find the element with id ' + ele);
-                              return;
-                          } else {
-                              elementId = element.id;
-                          }
-                  
-                          //set style for parent
-                          if (element.style.position !== 'absolute') {
-                              element.style.position = 'relative';
-                          }
-                          element.style.overflow = 'hidden';
-                  
-                          var prefixes = ["", "-moz-", "-o-animation-", "-webkit-", "-ms-"];
-                  
-                          //default option values
-                          var options = {
-                              animate: true,
-                              patternWidth: 100,
-                              patternHeight: 100,
-                              grainOpacity: 0.1,
-                              grainDensity: 1,
-                              grainWidth: 1,
-                              grainHeight: 1,
-                              grainChaos: 0.5,
-                              grainSpeed: 20
-                  
-                          };
-                  
-                          Object.keys(opt).forEach(function (key) {
-                              options[key] = opt[key];
-                          });
-                  
-                  
-                          var generateNoise = function () {
-                              var canvas = doc.createElement('canvas');
-                              var ctx = canvas.getContext('2d');
-                              canvas.width = options.patternWidth;
-                              canvas.height = options.patternHeight;
-                              for (var w = 0; w < options.patternWidth; w += options.grainDensity) {
-                                  for (var h = 0; h < options.patternHeight; h += options.grainDensity) {
-                                      var rgb = Math.random() * 256 | 0;
-                                      ctx.fillStyle = 'rgba(' + [rgb, rgb, rgb, options.grainOpacity].join() + ')';
-                                      ctx.fillRect(w, h, options.grainWidth, options.grainHeight);
-                                  }
-                              }
-                              return canvas.toDataURL('image/png');
-                          };
-                  
-                          function addCSSRule(sheet, selector, rules, index) {
-                              var ins = '';
-                              if (selector.length) {
-                                  ins = selector + "{" + rules + "}";
-                              } else {
-                                  ins = rules;
-                              }
-                  
-                              if ("insertRule" in sheet) {
-                                  sheet.insertRule(ins, index);
-                              } else if ("addRule" in sheet) {
-                                  sheet.addRule(selector, rules, index);
-                              }
-                          }
-                  
-                  
-                          var noise = generateNoise();
-                  
-                          var animation = '',
-                              keyFrames = ['0%:-10%,10%', '10%:-25%,0%', '20%:-30%,10%', '30%:-30%,30%', '40%::-20%,20%', '50%:-15%,10%', '60%:-20%,20%', '70%:-5%,20%', '80%:-25%,5%', '90%:-30%,25%', '100%:-10%,10%'];
-                  
-                          var pre = prefixes.length;
-                          while (pre--) {
-                              animation += '@' + prefixes[pre] + 'keyframes grained{';
-                              for (var key = 0; key < keyFrames.length; key++) {
-                                  var keyVal = keyFrames[key].split(':');
-                                  animation += keyVal[0] + '{';
-                                  animation += prefixes[pre] + 'transform:translate(' + keyVal[1] + ');';
-                                  animation += '}';
-                              }
-                              animation += '}';
-                          }
-                  
-                          //add animation keyframe
-                          var animationAdded = doc.getElementById('grained-animation');
-                          if (animationAdded) {
-                              animationAdded.parentElement.removeChild(animationAdded);
-                          }
-                          var style = doc.createElement("style");
-                          style.type = "text/css";
-                          style.id = 'grained-animation';
-                          style.innerHTML = animation;
-                          doc.body.appendChild(style);
-                  
-                          //add custimozed style
-                          var styleAdded = doc.getElementById('grained-animation-' + elementId);
-                          if (styleAdded) {
-                              styleAdded.parentElement.removeChild(styleAdded);
-                          }
-                  
-                          style = doc.createElement("style");
-                          style.type = "text/css";
-                          style.id = 'grained-animation-' + elementId;
-                          doc.body.appendChild(style);
-                  
-                          var rule = 'background-image: url(' + noise + ');';
-                          rule += 'position: absolute;content: "";height: 300%;width: 300%;left: -100%;top: -100%;';
-                          pre = prefixes.length;
-                          if (options.animate) {
-                              while (pre--) {
-                                  rule += prefixes[pre] + 'animation-name:grained;';
-                                  rule += prefixes[pre] + 'animation-iteration-count: infinite;';
-                                  rule += prefixes[pre] + 'animation-duration: ' + options.grainChaos + 's;';
-                                  rule += prefixes[pre] + 'animation-timing-function: steps(' +options.grainSpeed + ', end);';
-                              }
-                          }
-                  
-                          //selecter element to add grains
-                          selectorElement = '#' + elementId + '::before';
-                  
-                  
-                          addCSSRule(style.sheet, selectorElement, rule);
-                  
-                  
-                      }
-                  
-                      window.grained = grained;
-                      //END
-                  })(window, document);  
-                  </script>
-                  <script>
-                  var options = {
-                    "animate": true,
-                    "patternWidth": 600,
-                    "patternHeight": 600,
-                    "grainOpacity": 0.15,
-                    "grainDensity": 1,
-                    "grainWidth": 0.7,
-                    "grainHeight": 0.7,
-                  }
-                  
-                  grained("#bg2", options);
-                  
-                  </script>
-                      
-            </body>
-            <script src="resume_index.js" charset="utf-8"></script>
-        </html>
-        </html>
-        <script>
-          /*! Grained.js
-          * Author : Sarath Saleem  - https://github.com/sarathsaleem
-          * MIT license: http://opensource.org/licenses/MIT
-          * GitHub : https://github.com/sarathsaleem/grained
-          * v0.0.1
-          */
-          (function (window, doc) {
-          
-              "use strict";
-          
-              function grained(ele, opt) {
-          
-                  var element = null,
-                      elementId = null,
-                      selectorElement = null;
-          
-                  if (typeof ele === 'string') {
-                      element = doc.getElementById(ele.split('#')[1]);
-                  }
-          
-                  if (!element) {
-                      console.error('Grained: cannot find the element with id ' + ele);
-                      return;
-                  } else {
-                      elementId = element.id;
-                  }
-          
-                  //set style for parent
-                  if (element.style.position !== 'absolute') {
-                      element.style.position = 'relative';
-                  }
-                  element.style.overflow = 'hidden';
-          
-                  var prefixes = ["", "-moz-", "-o-animation-", "-webkit-", "-ms-"];
-          
-                  //default option values
-                  var options = {
-                      animate: true,
-                      patternWidth: 100,
-                      patternHeight: 100,
-                      grainOpacity: 0.1,
-                      grainDensity: 1,
-                      grainWidth: 1,
-                      grainHeight: 1,
-                      grainChaos: 0.5,
-                      grainSpeed: 20
-          
-                  };
-          
-                  Object.keys(opt).forEach(function (key) {
-                      options[key] = opt[key];
-                  });
-          
-          
-                  var generateNoise = function () {
-                      var canvas = doc.createElement('canvas');
-                      var ctx = canvas.getContext('2d');
-                      canvas.width = options.patternWidth;
-                      canvas.height = options.patternHeight;
-                      for (var w = 0; w < options.patternWidth; w += options.grainDensity) {
-                          for (var h = 0; h < options.patternHeight; h += options.grainDensity) {
-                              var rgb = Math.random() * 256 | 0;
-                              ctx.fillStyle = 'rgba(' + [rgb, rgb, rgb, options.grainOpacity].join() + ')';
-                              ctx.fillRect(w, h, options.grainWidth, options.grainHeight);
-                          }
-                      }
-                      return canvas.toDataURL('image/png');
-                  };
-          
-                  function addCSSRule(sheet, selector, rules, index) {
-                      var ins = '';
-                      if (selector.length) {
-                          ins = selector + "{" + rules + "}";
-                      } else {
-                          ins = rules;
-                      }
-          
-                      if ("insertRule" in sheet) {
-                          sheet.insertRule(ins, index);
-                      } else if ("addRule" in sheet) {
-                          sheet.addRule(selector, rules, index);
-                      }
-                  }
-          
-          
-                  var noise = generateNoise();
-          
-                  var animation = '',
-                      keyFrames = ['0%:-10%,10%', '10%:-25%,0%', '20%:-30%,10%', '30%:-30%,30%', '40%::-20%,20%', '50%:-15%,10%', '60%:-20%,20%', '70%:-5%,20%', '80%:-25%,5%', '90%:-30%,25%', '100%:-10%,10%'];
-          
-                  var pre = prefixes.length;
-                  while (pre--) {
-                      animation += '@' + prefixes[pre] + 'keyframes grained{';
-                      for (var key = 0; key < keyFrames.length; key++) {
-                          var keyVal = keyFrames[key].split(':');
-                          animation += keyVal[0] + '{';
-                          animation += prefixes[pre] + 'transform:translate(' + keyVal[1] + ');';
-                          animation += '}';
-                      }
-                      animation += '}';
-                  }
-          
-                  //add animation keyframe
-                  var animationAdded = doc.getElementById('grained-animation');
-                  if (animationAdded) {
-                      animationAdded.parentElement.removeChild(animationAdded);
-                  }
-                  var style = doc.createElement("style");
-                  style.type = "text/css";
-                  style.id = 'grained-animation';
-                  style.innerHTML = animation;
-                  doc.body.appendChild(style);
-          
-                  //add custimozed style
-                  var styleAdded = doc.getElementById('grained-animation-' + elementId);
-                  if (styleAdded) {
-                      styleAdded.parentElement.removeChild(styleAdded);
-                  }
-          
-                  style = doc.createElement("style");
-                  style.type = "text/css";
-                  style.id = 'grained-animation-' + elementId;
-                  doc.body.appendChild(style);
-          
-                  var rule = 'background-image: url(' + noise + ');';
-                  rule += 'position: absolute;content: "";height: 300%;width: 300%;left: -100%;top: -100%;';
-                  pre = prefixes.length;
-                  if (options.animate) {
-                      while (pre--) {
-                          rule += prefixes[pre] + 'animation-name:grained;';
-                          rule += prefixes[pre] + 'animation-iteration-count: infinite;';
-                          rule += prefixes[pre] + 'animation-duration: ' + options.grainChaos + 's;';
-                          rule += prefixes[pre] + 'animation-timing-function: steps(' +options.grainSpeed + ', end);';
-                      }
-                  }
-          
-                  //selecter element to add grains
-                  selectorElement = '#' + elementId + '::before';
-          
-          
-                  addCSSRule(style.sheet, selectorElement, rule);
-          
-          
-              }
-          
-              window.grained = grained;
-              //END
-          })(window, document);  
-          
-          var options = {
-            "animate": true,
-            "patternWidth": 600,
-            "patternHeight": 600,
-            "grainOpacity": 0.15,
-            "grainDensity": 1,
-            "grainWidth": 0.7,
-            "grainHeight": 0.7,
-          }
-          
-          grained("#bg2", options);
-          
-          </script>
-              
-    </body>
-    <script src="resume_index.js" charset="utf-8"></script>
-  </html>  
-    
+                
+                    function toggles(){
+                        if(document.getElementsByClassName('menubar')[0].style.opacity == '1'){
+                            document.getElementsByClassName('menubar')[0].style.opacity = '0';
+                            document.getElementsByClassName('vl')[0].style.opacity = '0';
+                            document.getElementsByClassName('visible')[0].style.opacity = '1';
+                            document.getElementsByClassName('visible')[1].style.opacity = '1';
+                        }
+                        else{
+                            document.getElementsByClassName('menubar')[0].style.opacity = '1';
+                            document.getElementsByClassName('vl')[0].style.opacity = '1';
+                            document.getElementsByClassName('visible')[0].style.opacity = '0';
+                            document.getElementsByClassName('visible')[1].style.opacity = '0';
+                        }    
+                    }
+                </script>          
+            
+            <script>
+                /*! Grained.js
+                * Author : Sarath Saleem  - https://github.com/sarathsaleem
+                * MIT license: http://opensource.org/licenses/MIT
+                * GitHub : https://github.com/sarathsaleem/grained
+                * v0.0.1
+                */
+                (function (window, doc) {
+                
+                    "use strict";
+                
+                    function grained(ele, opt) {
+                
+                        var element = null,
+                            elementId = null,
+                            selectorElement = null;
+                
+                        if (typeof ele === 'string') {
+                            element = doc.getElementById(ele.split('#')[1]);
+                        }
+                
+                        if (!element) {
+                            console.error('Grained: cannot find the element with id ' + ele);
+                            return;
+                        } else {
+                            elementId = element.id;
+                        }
+                
+                        //set style for parent
+                        if (element.style.position !== 'absolute') {
+                            element.style.position = 'relative';
+                        }
+                        element.style.overflow = 'hidden';
+                
+                        var prefixes = ["", "-moz-", "-o-animation-", "-webkit-", "-ms-"];
+                
+                        //default option values
+                        var options = {
+                            animate: true,
+                            patternWidth: 100,
+                            patternHeight: 100,
+                            grainOpacity: 0.1,
+                            grainDensity: 1,
+                            grainWidth: 1,
+                            grainHeight: 1,
+                            grainChaos: 0.5,
+                            grainSpeed: 20
+                
+                        };
+                
+                        Object.keys(opt).forEach(function (key) {
+                            options[key] = opt[key];
+                        });
+                
+                
+                        var generateNoise = function () {
+                            var canvas = doc.createElement('canvas');
+                            var ctx = canvas.getContext('2d');
+                            canvas.width = options.patternWidth;
+                            canvas.height = options.patternHeight;
+                            for (var w = 0; w < options.patternWidth; w += options.grainDensity) {
+                                for (var h = 0; h < options.patternHeight; h += options.grainDensity) {
+                                    var rgb = Math.random() * 256 | 0;
+                                    ctx.fillStyle = 'rgba(' + [rgb, rgb, rgb, options.grainOpacity].join() + ')';
+                                    ctx.fillRect(w, h, options.grainWidth, options.grainHeight);
+                                }
+                            }
+                            return canvas.toDataURL('image/png');
+                        };
+                
+                        function addCSSRule(sheet, selector, rules, index) {
+                            var ins = '';
+                            if (selector.length) {
+                                ins = selector + "{" + rules + "}";
+                            } else {
+                                ins = rules;
+                            }
+                
+                            if ("insertRule" in sheet) {
+                                sheet.insertRule(ins, index);
+                            } else if ("addRule" in sheet) {
+                                sheet.addRule(selector, rules, index);
+                            }
+                        }
+                
+                
+                        var noise = generateNoise();
+                
+                        var animation = '',
+                            keyFrames = ['0%:-10%,10%', '10%:-25%,0%', '20%:-30%,10%', '30%:-30%,30%', '40%::-20%,20%', '50%:-15%,10%', '60%:-20%,20%', '70%:-5%,20%', '80%:-25%,5%', '90%:-30%,25%', '100%:-10%,10%'];
+                
+                        var pre = prefixes.length;
+                        while (pre--) {
+                            animation += '@' + prefixes[pre] + 'keyframes grained{';
+                            for (var key = 0; key < keyFrames.length; key++) {
+                                var keyVal = keyFrames[key].split(':');
+                                animation += keyVal[0] + '{';
+                                animation += prefixes[pre] + 'transform:translate(' + keyVal[1] + ');';
+                                animation += '}';
+                            }
+                            animation += '}';
+                        }
+                
+                        //add animation keyframe
+                        var animationAdded = doc.getElementById('grained-animation');
+                        if (animationAdded) {
+                            animationAdded.parentElement.removeChild(animationAdded);
+                        }
+                        var style = doc.createElement("style");
+                        style.type = "text/css";
+                        style.id = 'grained-animation';
+                        style.innerHTML = animation;
+                        doc.body.appendChild(style);
+                
+                        //add custimozed style
+                        var styleAdded = doc.getElementById('grained-animation-' + elementId);
+                        if (styleAdded) {
+                            styleAdded.parentElement.removeChild(styleAdded);
+                        }
+                
+                        style = doc.createElement("style");
+                        style.type = "text/css";
+                        style.id = 'grained-animation-' + elementId;
+                        doc.body.appendChild(style);
+                
+                        var rule = 'background-image: url(' + noise + ');';
+                        rule += 'position: absolute;content: "";height: 300%;width: 300%;left: -100%;top: -100%;';
+                        pre = prefixes.length;
+                        if (options.animate) {
+                            while (pre--) {
+                                rule += prefixes[pre] + 'animation-name:grained;';
+                                rule += prefixes[pre] + 'animation-iteration-count: infinite;';
+                                rule += prefixes[pre] + 'animation-duration: ' + options.grainChaos + 's;';
+                                rule += prefixes[pre] + 'animation-timing-function: steps(' +options.grainSpeed + ', end);';
+                            }
+                        }
+                
+                        //selecter element to add grains
+                        selectorElement = '#' + elementId + '::before';
+                
+                
+                        addCSSRule(style.sheet, selectorElement, rule);
+                
+                
+                    }
+                
+                    window.grained = grained;
+                    //END
+                })(window, document);  
+                </script>
+                <script>
+                var options = {
+                "animate": true,
+                "patternWidth": 600,
+                "patternHeight": 600,
+                "grainOpacity": 0.15,
+                "grainDensity": 1,
+                "grainWidth": 0.7,
+                "grainHeight": 0.7,
+                }
+                
+                grained("#bg2", options);
+                
+                </script>
+                    
+        </body>
+        <script src="resume_index.js" charset="utf-8"></script>
+    </html>
+    </html>
+    <script>
+        /*! Grained.js
+        * Author : Sarath Saleem  - https://github.com/sarathsaleem
+        * MIT license: http://opensource.org/licenses/MIT
+        * GitHub : https://github.com/sarathsaleem/grained
+        * v0.0.1
+        */
+        (function (window, doc) {
+        
+            "use strict";
+        
+            function grained(ele, opt) {
+        
+                var element = null,
+                    elementId = null,
+                    selectorElement = null;
+        
+                if (typeof ele === 'string') {
+                    element = doc.getElementById(ele.split('#')[1]);
+                }
+        
+                if (!element) {
+                    console.error('Grained: cannot find the element with id ' + ele);
+                    return;
+                } else {
+                    elementId = element.id;
+                }
+        
+                //set style for parent
+                if (element.style.position !== 'absolute') {
+                    element.style.position = 'relative';
+                }
+                element.style.overflow = 'hidden';
+        
+                var prefixes = ["", "-moz-", "-o-animation-", "-webkit-", "-ms-"];
+        
+                //default option values
+                var options = {
+                    animate: true,
+                    patternWidth: 100,
+                    patternHeight: 100,
+                    grainOpacity: 0.1,
+                    grainDensity: 1,
+                    grainWidth: 1,
+                    grainHeight: 1,
+                    grainChaos: 0.5,
+                    grainSpeed: 20
+        
+                };
+        
+                Object.keys(opt).forEach(function (key) {
+                    options[key] = opt[key];
+                });
+        
+        
+                var generateNoise = function () {
+                    var canvas = doc.createElement('canvas');
+                    var ctx = canvas.getContext('2d');
+                    canvas.width = options.patternWidth;
+                    canvas.height = options.patternHeight;
+                    for (var w = 0; w < options.patternWidth; w += options.grainDensity) {
+                        for (var h = 0; h < options.patternHeight; h += options.grainDensity) {
+                            var rgb = Math.random() * 256 | 0;
+                            ctx.fillStyle = 'rgba(' + [rgb, rgb, rgb, options.grainOpacity].join() + ')';
+                            ctx.fillRect(w, h, options.grainWidth, options.grainHeight);
+                        }
+                    }
+                    return canvas.toDataURL('image/png');
+                };
+        
+                function addCSSRule(sheet, selector, rules, index) {
+                    var ins = '';
+                    if (selector.length) {
+                        ins = selector + "{" + rules + "}";
+                    } else {
+                        ins = rules;
+                    }
+        
+                    if ("insertRule" in sheet) {
+                        sheet.insertRule(ins, index);
+                    } else if ("addRule" in sheet) {
+                        sheet.addRule(selector, rules, index);
+                    }
+                }
+        
+        
+                var noise = generateNoise();
+        
+                var animation = '',
+                    keyFrames = ['0%:-10%,10%', '10%:-25%,0%', '20%:-30%,10%', '30%:-30%,30%', '40%::-20%,20%', '50%:-15%,10%', '60%:-20%,20%', '70%:-5%,20%', '80%:-25%,5%', '90%:-30%,25%', '100%:-10%,10%'];
+        
+                var pre = prefixes.length;
+                while (pre--) {
+                    animation += '@' + prefixes[pre] + 'keyframes grained{';
+                    for (var key = 0; key < keyFrames.length; key++) {
+                        var keyVal = keyFrames[key].split(':');
+                        animation += keyVal[0] + '{';
+                        animation += prefixes[pre] + 'transform:translate(' + keyVal[1] + ');';
+                        animation += '}';
+                    }
+                    animation += '}';
+                }
+        
+                //add animation keyframe
+                var animationAdded = doc.getElementById('grained-animation');
+                if (animationAdded) {
+                    animationAdded.parentElement.removeChild(animationAdded);
+                }
+                var style = doc.createElement("style");
+                style.type = "text/css";
+                style.id = 'grained-animation';
+                style.innerHTML = animation;
+                doc.body.appendChild(style);
+        
+                //add custimozed style
+                var styleAdded = doc.getElementById('grained-animation-' + elementId);
+                if (styleAdded) {
+                    styleAdded.parentElement.removeChild(styleAdded);
+                }
+        
+                style = doc.createElement("style");
+                style.type = "text/css";
+                style.id = 'grained-animation-' + elementId;
+                doc.body.appendChild(style);
+        
+                var rule = 'background-image: url(' + noise + ');';
+                rule += 'position: absolute;content: "";height: 300%;width: 300%;left: -100%;top: -100%;';
+                pre = prefixes.length;
+                if (options.animate) {
+                    while (pre--) {
+                        rule += prefixes[pre] + 'animation-name:grained;';
+                        rule += prefixes[pre] + 'animation-iteration-count: infinite;';
+                        rule += prefixes[pre] + 'animation-duration: ' + options.grainChaos + 's;';
+                        rule += prefixes[pre] + 'animation-timing-function: steps(' +options.grainSpeed + ', end);';
+                    }
+                }
+        
+                //selecter element to add grains
+                selectorElement = '#' + elementId + '::before';
+        
+        
+                addCSSRule(style.sheet, selectorElement, rule);
+        
+        
+            }
+        
+            window.grained = grained;
+            //END
+        })(window, document);  
+        
+        var options = {
+        "animate": true,
+        "patternWidth": 600,
+        "patternHeight": 600,
+        "grainOpacity": 0.15,
+        "grainDensity": 1,
+        "grainWidth": 0.7,
+        "grainHeight": 0.7,
+        }
+        
+        grained("#bg2", options);
+        
+        </script>
+            
+</body>
+<script src="resume_index.js" charset="utf-8"></script>
+</html>  
