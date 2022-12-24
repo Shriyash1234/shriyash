@@ -246,21 +246,25 @@ h2{
     font-family: 'Bolde', sans-serif;
 }
 .home{
+    z-index: 105;
     padding-top: 20vh;
     padding-left: 20vw;
     
 }
 .about{
+    z-index: 104;
     padding-top: 20vh;
     padding-left: 17vw;
     
 }
 .resume{
+    z-index: 103;
     padding-top: 20vh;
     padding-left: 5.5vw;
 }
 
 .contacts{
+    z-index: 102;
     padding-top: 20vh;
     padding-left: 5.5vw;
 }

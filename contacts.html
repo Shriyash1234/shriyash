@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
     <head>
-        <link rel="StyleSheet" href="styles.css" >
+        <link rel="StyleSheet" href="contacts.css" >
 
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
         <!-- jquery -->
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <!-- fonts -->
-        <script src="https://kit.fontawesome.com/dac226ae39.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/458fcd567c.js" crossorigin="anonymous"></script>
         <!-- favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
         <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -29,59 +29,82 @@
     <body>
       <div id="bg">
         <!-- <a href="/sidebar.html"> -->
-            <div onclick = "toggles()" class="sidecircle small glass">
-            
-                <hr class="short-line1" width="50%">
-                <hr class="short-line2" width="50%">
-                <hr class="short-line3" width="50%">
+        <div onclick = "toggles()" class="sidecircle small glass">
+            <hr class="short-line1" width="50%">
+            <hr class="short-line2" width="50%">
+            <hr class="short-line3" width="50%">
         <!-- </a>     -->
         </div>
-        <div class="corner">
-            <h5 class="cornername">WEB DEVELOPER</h5>
-            <h4 class="cornerweb">SHRIYASH MANDAVEKAR</h4>
-        </div>
-        <div class="container-1">
-            <h1 class="Shriyash">SHRIYASH</h1>
-                <img class = "personal_image"src="Photos/personal_image3.jpg" alt="">
-            <h1 class="Mandavekar"> MANDAVEKAR</h1>
-            <p class="sidename">SHRIYASH</p>
-        </div>
-        <div class="info">
-          <div class="row">
-            <div class="col-lg-4 col-sm-12 circle1 circle2">
-              <div class="circle small">
-                
-              </div>
+        <div class="menubar">
+            <div class="menu1">
+                <a href="index.html"><h2 class="big-size home">HOME</h2></a>
+                <h2 class="big-size about">ABOUT</h2>
             </div>
-            <div class="col-lg-8 col-sm-12">
-               <h1 class="Web_devloper Web_devloper2">Web <div class="developer">Developer</div> <div class="IIT">IIT</div> <div class="gandhinagar">Gandhinagar</div></h1>
+            <div class="menu2">
+                <a href="resume3.html"><h2 class="big-size resume">RESUME</h2></a>
+                <a href="contacts.html"><h2 class="big-size contacts">CONTACTS</h2></a>
             </div>
-          </div>
-        </div>
-            <div class="menubar">
-                <div class="menu1">
-                    <a href="index.html"><h2 class="big-size home">HOME</h2></a>
-                    <h2 class="big-size about">ABOUT</h2>
+        </div> 
+        <div class="rectangle">
+            <div class="container" >
+                <div class="row">
+                    <div class="col">
+                        <div class="left-col">
+                            <div class="left-left-col">
+                                <div class="number">
+                                    <h3 >Phone number</h3>
+                                    <h4 class="phone_number">+91 9518936113</h4>
+                                </div>
+                                <div class="email">
+                                    <h3>Email</h3>
+                                    <h4 class="mail">mandavekar.shriyash@iitgn.ac.in</h4>
+                                </div>
+                            </div>
+                            <div class="right-left-col">
+                                <div class="social">
+                                    <h3 class="social-media-text">Social Media</h3>
+                                    <div class="social-media-handles">
+                                        <span>
+                                            <div class="fb-insta">
+                                                <a href="https://www.facebook.com/IITGNStudentLife/" class="fb"><i class="fa-brands fa-facebook"></i></a>
+                                                <a href="https://www.instagram.com/studentlife_iitgn/" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                                            </div>
+                                            <div class="github-linkedin">
+                                                <a href="https://www.youtube.com/c/STUDENTLIFEIITGN" class="github"><i class="fa-brands fa-github"></i>
+                                                <a href="https://www.linkedin.com/company/media-and-public-relations-committee-iit-gandhinagar/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        
+                    </div>
+                    <div class="col upper">
+                        <h1 class="send_message">Send A Message</h1>
+                        <form action="/" method="post" >
+                            <h3>Name</h3>
+                                <input type="text" name="text" placeholder="Enter Your Name" class="form-control input-text email">
+                            <h3>Email</h3>
+                                <input type="text" name="text" placeholder="Enter Your Email" class="form-control input-text email">
+                            <h3>Message</h3>
+                                <textarea rows="7" cols="50" class="form-control" placeholder="Write Your Message"></textarea>
+                                 <button type="submit" class="btn btn-primary"><img src="Photos/telegram.png" alt="">Submit</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="menu2">
-                    <a href="resume3.html"><h2 class="big-size resume">RESUME</h2></a>
-                    <a href="contacts.html"><h2 class="big-size contacts">CONTACTS</h2></a>
-                </div>
-            </div> 
-            <div class="vl"></div>           <!-- vertical line -->                      
+            </div>
+
+        </div> 
+        <div class="vl"></div>           <!-- vertical line -->   
+        
+        
+        
+                         
       </div>
             <script>
+
                 
-                function toggles(){
-                    if(document.getElementsByClassName('menubar')[0].style.opacity == '1'){
-                        document.getElementsByClassName('menubar')[0].style.opacity = '0';
-                        document.getElementsByClassName('vl')[0].style.opacity = '0';
-                    }
-                    else{
-                        document.getElementsByClassName('menubar')[0].style.opacity = '1';
-                        document.getElementsByClassName('vl')[0].style.opacity = '1';
-                    }    
-                }
             </script>
         
         <script>
@@ -250,6 +273,7 @@
           </script>
               
     </body>
-    <script src="index.js" charset="utf-8"></script>
+    
+    <script src="contact_index.js" charset="utf-8"></script>
 </html>
 </html>

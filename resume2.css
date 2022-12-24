@@ -8,9 +8,7 @@ h1{
     color: #f94343;
     font-family: 'Montserrat', sans-serif;
 }
-#bg{
-    /* visibility: hidden; */
-}
+
 .container-1{
     display: flex;
     flex-direction: column;
@@ -150,7 +148,7 @@ body{
     /* bottom: 20vh; */
     
   }
-  .home{
+.home{
     z-index: 105;
     padding-top: 20vh;
     padding-left: 20vw;
