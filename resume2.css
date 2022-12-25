@@ -356,6 +356,10 @@ h4{
     width:40vw;
     height:50vh;
 }
+.caroz{
+    z-index: 110 !important;
+}
+
 
 a{
     text-decoration: none !important;
@@ -537,10 +541,26 @@ a{
         margin: auto;
         padding-top: 65vh;
         padding-left: 0vw;
+        left: 31vw;
     }
     .container2{
         flex-wrap: wrap;
         justify-content: center; 
+    }
+    .skill-items{
+        margin-right: 20vw;
+    }
+    .circle{
+        border: 10px solid #FF5F00;
+        margin-top: 1vw;
+        margin-left: 1vw;
+        width: 3vw;
+        height: 3vw;
+    }
+    .circle2{
+        border: 10px solid grey;
+        width: 3vw;
+        height: 3vw;
     }
    
 }

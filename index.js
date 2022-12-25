@@ -4,7 +4,15 @@ window.onload = (event) => {
   const vh = window.innerHeight;
   // const element = document.getElementById("bg2");
   // element.remove();
-  console.log(width)
+  // console.log(width)
+  const bigs = document.getElementsByClassName('big-size');
+    for(let i =0;i<bigs.length;i++){
+        bigs[i].style.zIndex = '0';
+    }
+  $('a[class="hide-links1"]').attr("href", "#"); 
+  $('a[class="hide-links2"]').attr("href", "#"); 
+  $('a[class="hide-links3"]').attr("href", "#");
+  $('a[class="hide-links4"]').attr("href", "#");  
   if(width >=991){
     console.log('a')
   document.getElementsByClassName('personal_image')[0].style.left = 0.4* width + 'px';
@@ -134,6 +142,30 @@ $(window).on('resize', function() {
   
     }
   })  
+  function toggles(){
+    if(document.getElementsByClassName('menubar')[0].style.opacity == '1'){
+        $('a[class="hide-links1"]').attr("href", "#"); 
+        $('a[class="hide-links2"]').attr("href", "#"); 
+        $('a[class="hide-links3"]').attr("href", "#");
+        $('a[class="hide-links4"]').attr("href", "#");  
+        document.getElementsByClassName('menubar')[0].style.opacity = '0';
+        document.getElementsByClassName('vl')[0].style.opacity = '0';
+        const bigs = document.getElementsByClassName('big-size');
+        bigs[0].style.zIndex = '105'
+        bigs[1].style.zIndex = '104'  
+        bigs[2].style.zIndex = '103'  
+        bigs[3].style.zIndex = '102' 
+    }
+    else{
+        document.getElementsByClassName('menubar')[0].style.opacity = '1';
+        document.getElementsByClassName('vl')[0].style.opacity = '1';
+        $('a[class="hide-links1"]').attr("href", "index.html"); 
+        $('a[class="hide-links2"]').attr("href", "about.html"); 
+        $('a[class="hide-links3"]').attr("href", "resume3.html");
+        $('a[class="hide-links4"]').attr("href", "contacts.html");  
+    }
+  }  
+
 // document.getElementsByClassName("Shriyash")[0].style.transform.translateX = window.scrollY*2+'px';
      // document.getElementsByClassName("Shriyash")[0].css("transform","translate(window.scrollY*2+'px',0)");
     // document.getElementsByClassName("Shriyash")[0].style.paddingLeft= window.scrollY*2+'px';

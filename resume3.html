@@ -40,14 +40,14 @@
                 <section id =menu-items>
                     <div class="menubar">
                         <div class="menu1">
-                            <a href="index.html"><h2 class="big-size home">HOME</h2></a>
-                            <h2 class="big-size about">ABOUT</h2>
+                            <a class="hide-links1" href="index.html"><h2 class="big-size home">HOME</h2></a>
+                            <a class="hide-links2" href="about.html"><h2 class="big-size about">ABOUT</h2></a>
                         </div>
                         <div class="menu2">
-                            <a href="resume3.html"><h2 class="big-size resume">RESUME</h2></a>
-                            <a href="contacts.html"><h2 class="big-size contacts">CONTACTS</h2></a>
+                            <a class="hide-links3" href="resume3.html"><h2 class="big-size resume">RESUME</h2></a>
+                            <a class="hide-links4" href="contacts.html"><h2 class="big-size contacts">CONTACTS</h2></a>
                         </div>
-                    </div> 
+                    </div>
                     <div class="vl"></div>           <!-- vertical line -->
                 </section>
                 <section id="education">
@@ -97,7 +97,7 @@
                     <div class="row">
                         <div class="col-12 col-lg-6 col-sm-12">
                             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
+                                <div class="carousel-indicators  caroz">
                                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -134,11 +134,11 @@
                                     </div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                <button class="carousel-control-prev caroz" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                <button class="carousel-control-next caroz" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
@@ -169,7 +169,7 @@
                     <div class="row">
                         <div class="col-12 col-lg-6 col-sm-12">
                             <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
+                                <div class="carousel-indicators caroz" >
                                     <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                     <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -214,11 +214,11 @@
                                     </div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+                                <button class="carousel-control-prev caroz" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+                                <button class="carousel-control-next caroz" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
@@ -341,23 +341,6 @@
                     </div>
 
                 </section>
-                <script>
-                
-                    function toggles(){
-                        if(document.getElementsByClassName('menubar')[0].style.opacity == '1'){
-                            document.getElementsByClassName('menubar')[0].style.opacity = '0';
-                            document.getElementsByClassName('vl')[0].style.opacity = '0';
-                            document.getElementsByClassName('visible')[0].style.opacity = '1';
-                            document.getElementsByClassName('visible')[1].style.opacity = '1';
-                        }
-                        else{
-                            document.getElementsByClassName('menubar')[0].style.opacity = '1';
-                            document.getElementsByClassName('vl')[0].style.opacity = '1';
-                            document.getElementsByClassName('visible')[0].style.opacity = '0';
-                            document.getElementsByClassName('visible')[1].style.opacity = '0';
-                        }
-                    }
-                </script>
             <script>
                 /*! Grained.js
                 * Author : Sarath Saleem  - https://github.com/sarathsaleem

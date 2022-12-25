@@ -105,6 +105,7 @@ h4{
     margin: 0px 5px;
   }
   .social-media-handles span .fb {
+    padding-bottom:1.2vh ;
     margin-left: 0px;
     color: #3b5998;
     border: 3px solid #3b5998;
@@ -115,6 +116,7 @@ h4{
   }
   
   .social-media-handles span .insta {
+    padding-bottom:1.2vh ;
     color: #e95950;
     border: 3px solid #e95950;
   }
@@ -125,6 +127,7 @@ h4{
   
   .social-media-handles span .github {
     padding-right: 7px;
+    padding-bottom:1.2vh ;
     color: #fff;
     border: 3px solid #fff;
   }
@@ -133,6 +136,7 @@ h4{
     background-color: #fff;
   }
   .social-media-handles span .linkedin{
+    padding-bottom:1.2vh ;
     color: #0A66C2;
     border: 3px solid #0A66C2;
   }
@@ -313,6 +317,7 @@ h2{
     z-index: 102;
     padding-top: 20vh;
     padding-left: 5.5vw;
+   
 }
 #bg2{
     /* position: static !important;
@@ -419,6 +424,7 @@ h2{
         margin: auto;
         padding-top: 65vh;
         padding-left: 0vw;
+        left: 31vw;
     }
     .rectangle{
         width:90vw !important;
