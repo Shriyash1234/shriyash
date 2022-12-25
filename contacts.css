@@ -518,6 +518,15 @@ h2{
     .left-col{
         padding-left: 0vw;
     }
+    .insta{
+        padding-bottom: 0.8vh !important;
+    }
+    .fb{
+        padding-bottom: 0.8vh !important ;
+    }
+    .github{
+        margin-left: 0vw !important;
+    }
 }
     
 @media screen and (max-width:479px){
@@ -556,6 +565,7 @@ h2{
         font-size: 5.2vw !important;
     }
    
+   
 }
 
 @media screen and (max-width:395px) {
@@ -589,6 +599,9 @@ h2{
     .mail,.phone_number{
         font-size: 3.5vw;
     }
+    .github{
+        margin-left: 5px !important;
+    }
 }
 @media screen and (max-width:720px){
     .circle.small {
@@ -608,6 +621,4 @@ h2{
         height: 110px;
     }
 }
-@media screen and (max-width:430px){
 
-}

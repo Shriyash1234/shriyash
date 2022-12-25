@@ -6,8 +6,41 @@ window.onload = (event) => {
     $('a[class="hide-links1"]').attr("href", "#"); 
     $('a[class="hide-links2"]').attr("href", "#"); 
     $('a[class="hide-links3"]').attr("href", "#");
-    $('a[class="hide-links4"]').attr("href", "#");  
+    $('a[class="hide-links4"]').attr("href", "#"); 
+    let height = window.innerHeight;
+    let width = window.innerWidth;
+    if (height<780 && width<430){
+        $('textarea').attr("rows",'5');
+    }
+    if (height<730 && width<430){
+        $('textarea').attr("rows",'3');
+    }
+    if (height<670 && width<430){
+        $('textarea').attr("rows",'2');
+    }
+    if (height<630 && width<430){
+        $('textarea').attr("rows",'1');
+    }
+    if(width<680 && height>800){
+        $('textarea').attr("rows",'5');
+    }  
     // $('a[class="hide-links"]').attr("href",'#'); 
+}
+
+window.onresize = (event) =>{
+    let height = window.innerHeight;
+    if (height<780 && width<430){
+        $('textarea').attr("rows",'5');
+    }
+    if (height<730 && width<430){
+        $('textarea').attr("rows",'3');
+    }
+    if (height<670 && width<430){
+        $('textarea').attr("rows",'2');
+    }
+    if (height<630 && width<430){
+        $('textarea').attr("rows",'1');
+    }   
 }
 function toggles(){
     if(document.getElementsByClassName('menubar')[0].style.opacity == '1'){
