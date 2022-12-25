@@ -36,26 +36,31 @@
   }
   function toggles(){
     if(document.getElementsByClassName('menubar')[0].style.opacity == '1'){
+        $('.carousel-indicators,.carousel-control-prev,.carousel-control-next').addClass('caroz');
+        document.getElementsByClassName('menubar')[0].style.opacity = '0';
+        document.getElementsByClassName('vl')[0].style.opacity = '0';
+        document.getElementsByClassName('visible')[0].style.opacity = '1';
+        document.getElementsByClassName('visible')[1].style.opacity = '1';
         $('a[class="hide-links1"]').attr("href", "#"); 
         $('a[class="hide-links2"]').attr("href", "#"); 
         $('a[class="hide-links3"]').attr("href", "#");
         $('a[class="hide-links4"]').attr("href", "#");  
-        document.getElementsByClassName('menubar')[0].style.opacity = '0';
-        document.getElementsByClassName('vl')[0].style.opacity = '0';
-        document.getElementsByClassName('btn')[0].style.zIndex = '110';
         const indicators= document.getElementsByClassName('carousel-indicators');
         for(let t =0;t<indicators.length;t++){
             indicators[t].zIndex='0';
         }
         const bigs = document.getElementsByClassName('big-size');
-        bigs[0].style.zIndex = '105'
-        bigs[1].style.zIndex = '104'  
-        bigs[2].style.zIndex = '103'  
-        bigs[3].style.zIndex = '102' 
+        bigs[0].style.zIndex = '0'
+        bigs[1].style.zIndex = '0'  
+        bigs[2].style.zIndex = '0'  
+        bigs[3].style.zIndex = '0'
     }
     else{
+      $('.carousel-indicators,.carousel-control-prev,.carousel-control-next').removeClass('caroz');
         document.getElementsByClassName('menubar')[0].style.opacity = '1';
         document.getElementsByClassName('vl')[0].style.opacity = '1';
+        document.getElementsByClassName('visible')[0].style.opacity = '0';
+        document.getElementsByClassName('visible')[1].style.opacity = '0';
         $('a[class="hide-links1"]').attr("href", "index.html"); 
         $('a[class="hide-links2"]').attr("href", "about.html"); 
         $('a[class="hide-links3"]').attr("href", "resume3.html");
@@ -65,7 +70,11 @@
         for(let t =0;t<indicators.length;t++){
             indicators[t].zIndex='110';
         }
-      }
+        const bigs = document.getElementsByClassName('big-size');
+        bigs[0].style.zIndex = '105'
+        bigs[1].style.zIndex = '104'  
+        bigs[2].style.zIndex = '103'  
+        bigs[3].style.zIndex = '102'
     }
-
+}
   

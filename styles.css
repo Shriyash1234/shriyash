@@ -252,6 +252,7 @@ h2{
     
 }
 .about{
+    
     z-index: 104;
     padding-top: 20vh;
     padding-left: 17vw;
@@ -456,7 +457,7 @@ a{
         
     }
     .about{
-
+        right:37vw;
         position: absolute;
         margin: auto;
         padding-top: 35vh;

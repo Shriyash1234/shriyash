@@ -151,10 +151,10 @@ $(window).on('resize', function() {
         document.getElementsByClassName('menubar')[0].style.opacity = '0';
         document.getElementsByClassName('vl')[0].style.opacity = '0';
         const bigs = document.getElementsByClassName('big-size');
-        bigs[0].style.zIndex = '105'
-        bigs[1].style.zIndex = '104'  
-        bigs[2].style.zIndex = '103'  
-        bigs[3].style.zIndex = '102' 
+        bigs[0].style.zIndex = '0'
+        bigs[1].style.zIndex = '0'  
+        bigs[2].style.zIndex = '0'  
+        bigs[3].style.zIndex = '0'
     }
     else{
         document.getElementsByClassName('menubar')[0].style.opacity = '1';
@@ -162,7 +162,12 @@ $(window).on('resize', function() {
         $('a[class="hide-links1"]').attr("href", "index.html"); 
         $('a[class="hide-links2"]').attr("href", "about.html"); 
         $('a[class="hide-links3"]').attr("href", "resume3.html");
-        $('a[class="hide-links4"]').attr("href", "contacts.html");  
+        $('a[class="hide-links4"]').attr("href", "contacts.html");
+        const bigs = document.getElementsByClassName('big-size');
+        bigs[0].style.zIndex = '105'
+        bigs[1].style.zIndex = '104'  
+        bigs[2].style.zIndex = '103'  
+        bigs[3].style.zIndex = '102'  
     }
   }  
 
