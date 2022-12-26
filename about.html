@@ -1,1 +1,234 @@
-<h1>About</h1>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+    <head>
+        <link rel="StyleSheet" href="about.css" >
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Montserrat:ital,wght@0,400;1,300&family=Playfair+Display&family=Tiro+Kannada:ital@1&display=swap" rel="stylesheet">
+        <!-- Bootstrap -->
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <!-- fonts -->
+        <script src="https://kit.fontawesome.com/dac226ae39.js" crossorigin="anonymous"></script>
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="/images/site.webmanifest">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+    </head>
+    <title>
+       Personal website 
+    </title>
+    <body>
+        <div id="bg">
+        <!-- <a href="/sidebar.html"> -->
+            <div onclick = "toggles()" class="sidecircle small glass">
+            
+                <hr class="short-line1" width="50%">
+                <hr class="short-line2" width="50%">
+                <hr class="short-line3" width="50%">
+        <!-- </a>     -->
+        </div>
+            <div class="menubar">
+                <div class="menu1">
+                    <a class="hide-links1" href="index.html"><h2 class="big-size home">HOME</h2></a>
+                    <a class="hide-links2" href="about.html"><h2 class="big-size about">ABOUT</h2></a>
+                </div>
+                <div class="menu2">
+                    <a class="hide-links3" href="resume3.html"><h2 class="big-size resume">RESUME</h2></a>
+                    <a class="hide-links4" href="contacts.html"><h2 class="big-size contacts">CONTACTS</h2></a>
+                </div>
+            </div>
+            <div class="vl"></div>           <!-- vertical line -->                      
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="rectangle">
+                        <img class="about-image" src="photos\personal_image3.jpg" alt="">
+                        <h3>Hi, I am Shriyash, nice to meet you!</h3>
+                        <p>Hi, I'm Shriyash Mandavekar and I'm a web developer and student at IIT Gandhinagar. I'm passionate about building intuitive, user-friendly websites and applications, and I'm always looking for new ways to improve my skills and stay up-to-date with the latest technologies and trends.</p>
+                        <p>I first became interested in web development during high school, and I've been learning and building projects ever since. In college, I've had the opportunity to work on a variety of projects, both as part of my coursework and independently, and I've gained valuable experience in areas such as responsive design, front-end development, and database management.</p>
+                        <p>Outside of web development, I enjoy staying active and spending time outdoors. I'm an avid runner and I love exploring new trails and routes. In my free time, I also enjoy reading and solveing cubes.</p>
+                        <p>Thank you for visiting my site! I hope you find the content here informative and interesting. If you have any questions or would like to connect, please don't hesitate to reach out.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        
+        <script>
+          /*! Grained.js
+          * Author : Sarath Saleem  - https://github.com/sarathsaleem
+          * MIT license: http://opensource.org/licenses/MIT
+          * GitHub : https://github.com/sarathsaleem/grained
+          * v0.0.1
+          */
+          (function (window, doc) {
+          
+              "use strict";
+          
+              function grained(ele, opt) {
+          
+                  var element = null,
+                      elementId = null,
+                      selectorElement = null;
+          
+                  if (typeof ele === 'string') {
+                      element = doc.getElementById(ele.split('#')[1]);
+                  }
+          
+                  if (!element) {
+                      console.error('Grained: cannot find the element with id ' + ele);
+                      return;
+                  } else {
+                      elementId = element.id;
+                  }
+          
+                  //set style for parent
+                  if (element.style.position !== 'absolute') {
+                      element.style.position = 'relative';
+                  }
+                  element.style.overflow = 'hidden';
+          
+                  var prefixes = ["", "-moz-", "-o-animation-", "-webkit-", "-ms-"];
+          
+                  //default option values
+                  var options = {
+                      animate: true,
+                      patternWidth: 100,
+                      patternHeight: 100,
+                      grainOpacity: 0.1,
+                      grainDensity: 1,
+                      grainWidth: 1,
+                      grainHeight: 1,
+                      grainChaos: 0.5,
+                      grainSpeed: 20
+          
+                  };
+          
+                  Object.keys(opt).forEach(function (key) {
+                      options[key] = opt[key];
+                  });
+          
+          
+                  var generateNoise = function () {
+                      var canvas = doc.createElement('canvas');
+                      var ctx = canvas.getContext('2d');
+                      canvas.width = options.patternWidth;
+                      canvas.height = options.patternHeight;
+                      for (var w = 0; w < options.patternWidth; w += options.grainDensity) {
+                          for (var h = 0; h < options.patternHeight; h += options.grainDensity) {
+                              var rgb = Math.random() * 256 | 0;
+                              ctx.fillStyle = 'rgba(' + [rgb, rgb, rgb, options.grainOpacity].join() + ')';
+                              ctx.fillRect(w, h, options.grainWidth, options.grainHeight);
+                          }
+                      }
+                      return canvas.toDataURL('image/png');
+                  };
+          
+                  function addCSSRule(sheet, selector, rules, index) {
+                      var ins = '';
+                      if (selector.length) {
+                          ins = selector + "{" + rules + "}";
+                      } else {
+                          ins = rules;
+                      }
+          
+                      if ("insertRule" in sheet) {
+                          sheet.insertRule(ins, index);
+                      } else if ("addRule" in sheet) {
+                          sheet.addRule(selector, rules, index);
+                      }
+                  }
+          
+          
+                  var noise = generateNoise();
+          
+                  var animation = '',
+                      keyFrames = ['0%:-10%,10%', '10%:-25%,0%', '20%:-30%,10%', '30%:-30%,30%', '40%::-20%,20%', '50%:-15%,10%', '60%:-20%,20%', '70%:-5%,20%', '80%:-25%,5%', '90%:-30%,25%', '100%:-10%,10%'];
+          
+                  var pre = prefixes.length;
+                  while (pre--) {
+                      animation += '@' + prefixes[pre] + 'keyframes grained{';
+                      for (var key = 0; key < keyFrames.length; key++) {
+                          var keyVal = keyFrames[key].split(':');
+                          animation += keyVal[0] + '{';
+                          animation += prefixes[pre] + 'transform:translate(' + keyVal[1] + ');';
+                          animation += '}';
+                      }
+                      animation += '}';
+                  }
+          
+                  //add animation keyframe
+                  var animationAdded = doc.getElementById('grained-animation');
+                  if (animationAdded) {
+                      animationAdded.parentElement.removeChild(animationAdded);
+                  }
+                  var style = doc.createElement("style");
+                  style.type = "text/css";
+                  style.id = 'grained-animation';
+                  style.innerHTML = animation;
+                  doc.body.appendChild(style);
+          
+                  //add custimozed style
+                  var styleAdded = doc.getElementById('grained-animation-' + elementId);
+                  if (styleAdded) {
+                      styleAdded.parentElement.removeChild(styleAdded);
+                  }
+          
+                  style = doc.createElement("style");
+                  style.type = "text/css";
+                  style.id = 'grained-animation-' + elementId;
+                  doc.body.appendChild(style);
+          
+                  var rule = 'background-image: url(' + noise + ');';
+                  rule += 'position: absolute;content: "";height: 300%;width: 300%;left: -100%;top: -100%;';
+                  pre = prefixes.length;
+                  if (options.animate) {
+                      while (pre--) {
+                          rule += prefixes[pre] + 'animation-name:grained;';
+                          rule += prefixes[pre] + 'animation-iteration-count: infinite;';
+                          rule += prefixes[pre] + 'animation-duration: ' + options.grainChaos + 's;';
+                          rule += prefixes[pre] + 'animation-timing-function: steps(' +options.grainSpeed + ', end);';
+                      }
+                  }
+          
+                  //selecter element to add grains
+                  selectorElement = '#' + elementId + '::before';
+          
+          
+                  addCSSRule(style.sheet, selectorElement, rule);
+          
+          
+              }
+          
+              window.grained = grained;
+              //END
+          })(window, document);  
+          </script>
+          <script>
+          var options = {
+            "animate": true,
+            "patternWidth": 600,
+            "patternHeight": 600,
+            "grainOpacity": 0.15,
+            "grainDensity": 1,
+            "grainWidth": 0.7,
+            "grainHeight": 0.7,
+          }
+          
+          grained("#bg", options);
+          
+          </script>
+              
+    </body>
+    <script src="about_index.js" charset="utf-8"></script>
+    
+</html>
+</html>

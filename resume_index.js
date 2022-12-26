@@ -18,7 +18,8 @@
     $('a[class="hide-links1"]').attr("href", "#"); 
     $('a[class="hide-links2"]').attr("href", "#"); 
     $('a[class="hide-links3"]').attr("href", "#");
-    $('a[class="hide-links4"]').attr("href", "#");  
+    $('a[class="hide-links4"]').attr("href", "#"); 
+   
 
   }
   window.onresize = (event) => {
@@ -41,6 +42,9 @@
         document.getElementsByClassName('vl')[0].style.opacity = '0';
         document.getElementsByClassName('visible')[0].style.opacity = '1';
         document.getElementsByClassName('visible')[1].style.opacity = '1';
+        document.getElementsByClassName('education')[0].style.zIndex = '110'
+        document.getElementsByClassName('skills')[0].style.zIndex = '110'
+        document.getElementsByClassName('websites')[0].style.zIndex = '110'
         $('a[class="hide-links1"]').attr("href", "#"); 
         $('a[class="hide-links2"]').attr("href", "#"); 
         $('a[class="hide-links3"]').attr("href", "#");
@@ -61,6 +65,9 @@
         document.getElementsByClassName('vl')[0].style.opacity = '1';
         document.getElementsByClassName('visible')[0].style.opacity = '0';
         document.getElementsByClassName('visible')[1].style.opacity = '0';
+        document.getElementsByClassName('education')[0].style.zIndex = '0'
+        document.getElementsByClassName('skills')[0].style.zIndex = '0'
+        document.getElementsByClassName('websites')[0].style.zIndex = '0'
         $('a[class="hide-links1"]').attr("href", "index.html"); 
         $('a[class="hide-links2"]').attr("href", "about.html"); 
         $('a[class="hide-links3"]').attr("href", "resume3.html");
@@ -77,4 +84,36 @@
         bigs[3].style.zIndex = '102'
     }
 }
+// var height = document.getElementById('last').clientHeight;
+// console.log(height)
+// // Get the target element
+// const target = document.getElementById('last');
+// const body = document.body;
+// // Get the bounding client rect of the target element
+// const targetRect = target.getBoundingClientRect();
+
+// // Calculate the scroll threshold based on the top position of the target element
+// const scrollThreshold = targetRect.top + window.pageYOffset;
+// console.log('st=',scrollThreshold)
+// let scrollingEnabled = true;
+// // Add an event listener for the "scroll" event
+// window.addEventListener('scroll', function() {
+//   // Get the current scroll position
+//   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//   // If the current scroll position is greater than the threshold and scrolling is currently enabled, disable scrolling
+//   if (scrollTop> (scrollThreshold -4*height) && scrollingEnabled) {
+//     console.log('yes')
+//     console.log('stop=',scrollTop)
+//     console.log('st=',scrollThreshold)
+    
+//     scrollingEnabled = false;
+//     body.classList.add('scroll-lock');
+//   }
+//   // If the current scroll position is less than the threshold and scrolling is currently disabled, enable scrolling
+//   else if (scrollTop <= (scrollThreshold-5*height) && !scrollingEnabled) {
+//     scrollingEnabled = true;
+//     body.classList.remove('scroll-lock');
+//   }
+// });
+
   
