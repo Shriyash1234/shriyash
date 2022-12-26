@@ -75,7 +75,7 @@ function toggles(){
         document.getElementsByClassName('btn')[0].style.zIndex = '0';
         $('a[class="hide-links1"]').attr("href", "index.html"); 
         $('a[class="hide-links2"]').attr("href", "about.html"); 
-        $('a[class="hide-links3"]').attr("href", "resume3.html");
+        $('a[class="hide-links3"]').attr("href", "resume.html");
         $('a[class="hide-links4"]').attr("href", "contacts.html");  
         console.log($('a[class="hide-links"]').attr("href"))
         const indicators= document.getElementsByClassName('carousel-indicators');

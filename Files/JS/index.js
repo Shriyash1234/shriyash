@@ -161,7 +161,7 @@ $(window).on('resize', function() {
         document.getElementsByClassName('vl')[0].style.opacity = '1';
         $('a[class="hide-links1"]').attr("href", "index.html"); 
         $('a[class="hide-links2"]').attr("href", "about.html"); 
-        $('a[class="hide-links3"]').attr("href", "resume3.html");
+        $('a[class="hide-links3"]').attr("href", "resume.html");
         $('a[class="hide-links4"]').attr("href", "contacts.html");
         const bigs = document.getElementsByClassName('big-size');
         bigs[0].style.zIndex = '105'
