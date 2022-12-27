@@ -9,6 +9,8 @@ window.onload = (event) => {
     $('a[class="hide-links4"]').attr("href", "#"); 
     let height = window.innerHeight;
     let width = window.innerWidth;
+    console.log(height)
+    console.log(width)
     if (height<780 && width<430){
         $('textarea').attr("rows",'5');
     }
@@ -21,7 +23,7 @@ window.onload = (event) => {
     if (height<630 && width<430){
         $('textarea').attr("rows",'1');
     }
-    if(width<680 && height>800){
+    if(width>800 && height<680){
         $('textarea').attr("rows",'5');
     }  
     // $('a[class="hide-links"]').attr("href",'#'); 
@@ -29,6 +31,7 @@ window.onload = (event) => {
 
 window.onresize = (event) =>{
     let height = window.innerHeight;
+    let width = window.innerWidth;
     if (height<780 && width<430){
         $('textarea').attr("rows",'5');
     }
@@ -40,6 +43,9 @@ window.onresize = (event) =>{
     }
     if (height<630 && width<430){
         $('textarea').attr("rows",'1');
+    }  
+    if(width>800 && height<680){
+        $('textarea').attr("rows",'4');
     }   
 }
 function toggles(){
