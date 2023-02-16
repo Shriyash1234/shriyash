@@ -48,6 +48,10 @@ window.onresize = (event) =>{
         $('textarea').attr("rows",'4');
     }   
 }
+// $("form[action^='mailto:mandavekar.shriyash@iitgn.ac.in']").on("click",function() {
+//     window.top.location = $(this).prop("href");
+//     return false;
+// });
 function toggles(){
     if(document.getElementsByClassName('menubar')[0].style.opacity == '1'){
         $('a[class="hide-links1"]').attr("href", "#"); 
