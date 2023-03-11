@@ -353,7 +353,7 @@ h4{
     left:10.6vw;
     align-items: center;
 }
-#myCarousel, #myCarousel2{
+#myCarousel, #myCarousel2,#myCarousel3{
     margin-left: 5vw;
     width:40vw;
     height:50vh;
@@ -495,7 +495,7 @@ a{
         left: 2.7vw;
     }
     
-    #myCarousel, #myCarousel2{
+    #myCarousel, #myCarousel2,#myCarousel3{
        margin-left: 10vw;
        width:80vw;
        height: 60vh;
